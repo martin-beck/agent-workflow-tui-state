@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**15 ARs tracked** across 2 active status categories.
+**17 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 2 |
+| **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 13 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -43,6 +43,8 @@ flowchart LR
         AR_0013["AR-0013 - Planned"]:::status_planned
         AR_0014["AR-0014 - Done"]:::status_done
         AR_0015["AR-0015 - Done"]:::status_done
+        AR_0016["AR-0016 - Planned"]:::status_planned
+        AR_0017["AR-0017 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -64,11 +66,14 @@ flowchart LR
     AR_0008 --> AR_0011
     AR_0009 --> AR_0011
     AR_0010 --> AR_0011
-    AR_0011 --> AR_0012
+    AR_0011 --> AR_0016
+    AR_0011 --> AR_0017
     AR_0012 --> AR_0013
     AR_0014 --> AR_0002
     AR_0014 --> AR_0015
     AR_0015 --> AR_0003
+    AR_0016 --> AR_0012
+    AR_0017 --> AR_0012
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -93,20 +98,24 @@ flowchart LR
 | [AR-0008](tasks/AR-0008.md) | [AR-0003](tasks/AR-0003.md), [AR-0006](tasks/AR-0006.md) | [AR-0011](tasks/AR-0011.md) |
 | [AR-0009](tasks/AR-0009.md) | [AR-0004](tasks/AR-0004.md), [AR-0005](tasks/AR-0005.md), [AR-0007](tasks/AR-0007.md) | [AR-0011](tasks/AR-0011.md) |
 | [AR-0010](tasks/AR-0010.md) | [AR-0003](tasks/AR-0003.md), [AR-0006](tasks/AR-0006.md) | [AR-0011](tasks/AR-0011.md) |
-| [AR-0011](tasks/AR-0011.md) | [AR-0007](tasks/AR-0007.md), [AR-0008](tasks/AR-0008.md), [AR-0009](tasks/AR-0009.md), [AR-0010](tasks/AR-0010.md) | [AR-0012](tasks/AR-0012.md) |
-| [AR-0012](tasks/AR-0012.md) | [AR-0011](tasks/AR-0011.md) | [AR-0013](tasks/AR-0013.md) |
+| [AR-0011](tasks/AR-0011.md) | [AR-0007](tasks/AR-0007.md), [AR-0008](tasks/AR-0008.md), [AR-0009](tasks/AR-0009.md), [AR-0010](tasks/AR-0010.md) | [AR-0016](tasks/AR-0016.md), [AR-0017](tasks/AR-0017.md) |
+| [AR-0012](tasks/AR-0012.md) | [AR-0016](tasks/AR-0016.md), [AR-0017](tasks/AR-0017.md) | [AR-0013](tasks/AR-0013.md) |
 | [AR-0013](tasks/AR-0013.md) | [AR-0012](tasks/AR-0012.md) | None |
 | [AR-0014](tasks/AR-0014.md) | [AR-0001](tasks/AR-0001.md) | [AR-0002](tasks/AR-0002.md), [AR-0015](tasks/AR-0015.md) |
 | [AR-0015](tasks/AR-0015.md) | [AR-0001](tasks/AR-0001.md), [AR-0014](tasks/AR-0014.md) | [AR-0003](tasks/AR-0003.md) |
+| [AR-0016](tasks/AR-0016.md) | [AR-0011](tasks/AR-0011.md) | [AR-0012](tasks/AR-0012.md) |
+| [AR-0017](tasks/AR-0017.md) | [AR-0011](tasks/AR-0011.md) | [AR-0012](tasks/AR-0012.md) |
 
 ## Complete AR inventory
 
-### Planned (2)
+### Planned (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0012](tasks/AR-0012.md): End-to-end runtime verification | Unclaimed | Prove runtime behavior and AR input/output round trips. | Exercise the real terminal application with recorded input, end-to-end AR fixtures, and recovery scenarios. |
+| P1 | [AR-0012](tasks/AR-0012.md): Runtime verification orchestration | Unclaimed | Orchestrate runtime verification evidence and AR round trips. | Integrate the recorded-input and recovery runtime evidence into one release-bound report. |
 | P1 | [AR-0013](tasks/AR-0013.md): Release and operational qualification | Unclaimed | Publish a reproducible, supported TUI release. | Harden packaging, platform support, accessibility, privacy, signed release, and installation documentation. |
+| P1 | [AR-0016](tasks/AR-0016.md): Recorded terminal runtime tests | Unclaimed | Verify normal terminal runtime behavior against public contracts. | Drive the real TUI through recorded terminal input for a complete discussion-to-event round trip. |
+| P1 | [AR-0017](tasks/AR-0017.md): Recovery and reopen runtime tests | Unclaimed | Verify runtime recovery and conflict-reopen behavior. | Exercise interrupted save, stale resume, unresolved conflict, targeted reopen, and re-ask runtime paths. |
 
 ### Done (13)
 
