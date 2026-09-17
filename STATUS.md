@@ -68,6 +68,7 @@ flowchart LR
     AR_0012 --> AR_0013
     AR_0014 --> AR_0002
     AR_0014 --> AR_0015
+    AR_0015 --> AR_0003
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -84,7 +85,7 @@ flowchart LR
 | --- | --- | --- |
 | [AR-0001](tasks/AR-0001.md) | None | [AR-0002](tasks/AR-0002.md), [AR-0003](tasks/AR-0003.md), [AR-0014](tasks/AR-0014.md), [AR-0015](tasks/AR-0015.md) |
 | [AR-0002](tasks/AR-0002.md) | [AR-0001](tasks/AR-0001.md), [AR-0014](tasks/AR-0014.md) | [AR-0004](tasks/AR-0004.md) |
-| [AR-0003](tasks/AR-0003.md) | [AR-0001](tasks/AR-0001.md) | [AR-0004](tasks/AR-0004.md), [AR-0008](tasks/AR-0008.md), [AR-0010](tasks/AR-0010.md) |
+| [AR-0003](tasks/AR-0003.md) | [AR-0001](tasks/AR-0001.md), [AR-0015](tasks/AR-0015.md) | [AR-0004](tasks/AR-0004.md), [AR-0008](tasks/AR-0008.md), [AR-0010](tasks/AR-0010.md) |
 | [AR-0004](tasks/AR-0004.md) | [AR-0002](tasks/AR-0002.md), [AR-0003](tasks/AR-0003.md) | [AR-0005](tasks/AR-0005.md), [AR-0009](tasks/AR-0009.md) |
 | [AR-0005](tasks/AR-0005.md) | [AR-0004](tasks/AR-0004.md) | [AR-0006](tasks/AR-0006.md), [AR-0009](tasks/AR-0009.md) |
 | [AR-0006](tasks/AR-0006.md) | [AR-0005](tasks/AR-0005.md) | [AR-0007](tasks/AR-0007.md), [AR-0008](tasks/AR-0008.md), [AR-0010](tasks/AR-0010.md) |
@@ -96,7 +97,7 @@ flowchart LR
 | [AR-0012](tasks/AR-0012.md) | [AR-0011](tasks/AR-0011.md) | [AR-0013](tasks/AR-0013.md) |
 | [AR-0013](tasks/AR-0013.md) | [AR-0012](tasks/AR-0012.md) | None |
 | [AR-0014](tasks/AR-0014.md) | [AR-0001](tasks/AR-0001.md) | [AR-0002](tasks/AR-0002.md), [AR-0015](tasks/AR-0015.md) |
-| [AR-0015](tasks/AR-0015.md) | [AR-0001](tasks/AR-0001.md), [AR-0014](tasks/AR-0014.md) | None |
+| [AR-0015](tasks/AR-0015.md) | [AR-0001](tasks/AR-0001.md), [AR-0014](tasks/AR-0014.md) | [AR-0003](tasks/AR-0003.md) |
 
 ## Complete AR inventory
 
@@ -105,7 +106,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0002](tasks/AR-0002.md): Interactive TUI shell | Unclaimed | Build the minimal interactive terminal shell. | Implement only the terminal shell lifecycle and bounded input loop. |
-| P0 | [AR-0003](tasks/AR-0003.md): AR context and TUI event adapter | Unclaimed | Create the revision-bound input/output protocol between ARs and the TUI. | Implement strict AR context and typed TUI event envelopes with stale/cross-AR rejection. |
+| P0 | [AR-0003](tasks/AR-0003.md): TUI event adapter implementation | Unclaimed | Connect revision-bound envelopes to TUI session boundaries. | Implement adapter transport and predecessor validation on top of the strict envelope schemas. |
 | P0 | [AR-0008](tasks/AR-0008.md): Coordinator lifecycle adapter | Unclaimed | Integrate the TUI with Coordinator as AR lifecycle authority. | Bind accepted TUI events to Coordinator task revisions, lifecycle transitions, and durable event references. |
 | P0 | [AR-0009](tasks/AR-0009.md): AWG decision adapter | Unclaimed | Integrate TUI interaction with AWG decision semantics. | Consume AWG packet/decision/reconciliation contracts and emit provenance-preserving decision records. |
 | P0 | [AR-0010](tasks/AR-0010.md): AWQ quality and evidence adapter | Unclaimed | Integrate quality and evidence gates without turning them into user intent. | Integrate AWQ checks for schema, privacy, formal evidence, rendering, persistence, and truthful limitations. |
