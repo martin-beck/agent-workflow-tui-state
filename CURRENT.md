@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0050](tasks/AR-0050.md): Deterministic live recording artifacts | Prevent renderer timing bytes from making generated recordings flaky. | Canonicalize asciinema frames so repeated CI replay is deterministic while retaining human-paced real-TUI state transitions. | codex-awt-ar0050-20260917 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -62,3 +56,4 @@ Never edit this file directly.
 | P1 | [AR-0036](tasks/AR-0036.md): Rich synthetic scenario inputs | Strengthen scenario fixtures with complete decision-session use cases and syntax checks. | Add semantically distinct, strongly validated synthetic TUI scenario inputs. | - |
 | P1 | [AR-0037](tasks/AR-0037.md): Interactive helper launcher portability | Fix direct helper launcher import resolution. | Make the zero-argument helper executable from the repository checkout without package installation. | - |
 | P1 | [AR-0045](tasks/AR-0045.md): Visible active-anchor marker | Ensure anchor highlighting is visible in the live viewport. | Keep the active Markdown document anchor visible at the top of the document pane. | - |
+| P1 | [AR-0050](tasks/AR-0050.md): Deterministic live recording artifacts | Prevent renderer timing bytes from making generated recordings flaky. | Canonicalize asciinema frames so repeated CI replay is deterministic while retaining human-paced real-TUI state transitions. | - |
