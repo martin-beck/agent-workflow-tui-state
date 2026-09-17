@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0042](tasks/AR-0042.md): Default live demo and anchor highlighting | Make the standalone TUI immediately demonstrate the complete interaction model. | Show a multi-decision workplan/design demo by default and visibly mark the active document anchor. | codex-awt-ar0042-20260917 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -30,6 +24,7 @@ Never edit this file directly.
 | P0 | [AR-0039](tasks/AR-0039.md): Live proposal and batch interaction | Make every decision and proposal interaction usable live. | Implement real proposal selection, helper updates, batch decisions, and user-authored proposal input. | - |
 | P0 | [AR-0040](tasks/AR-0040.md): Terminal lifecycle cleanup | Make live TUI startup and shutdown clean and reversible. | Restore terminal state on every exit path and leave only concise final output. | - |
 | P0 | [AR-0041](tasks/AR-0041.md): Live scenario demo parity | Prove scenario demos exercise the complete live UI. | Drive representative corpus scenarios through demo packets with multiple decisions and verify clean interactive completion. | - |
+| P0 | [AR-0042](tasks/AR-0042.md): Default live demo and anchor highlighting | Make the standalone TUI immediately demonstrate the complete interaction model. | Show a multi-decision workplan/design demo by default and visibly mark the active document anchor. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
