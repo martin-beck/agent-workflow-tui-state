@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0028](tasks/AR-0028.md): Transport retries and stale rejection | Make live transport retryable and stale-event safe. | Implement bounded retries and fail-closed handling for stale or rejected events. | - |
+| P0 | [AR-0028](tasks/AR-0028.md): Transport retries and stale rejection | Make live transport retryable and stale-event safe. | Implement bounded retries and fail-closed handling for stale or rejected events. | codex-awt-ar0028-20260917 |
 
 ## Planned
 
