@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0043](tasks/AR-0043.md): Live scenario runner parity | Ensure scenario screenshots exercise the real multi-pane TUI model. | Instantiate the live application model for each scenario replay and include document/decision state in generated demos. | - |
+| P0 | [AR-0043](tasks/AR-0043.md): Live scenario runner parity | Ensure scenario screenshots exercise the real multi-pane TUI model. | Instantiate the live application model for each scenario replay and include document/decision state in generated demos. | codex-awt-ar0043-20260917 |
 
 ## Done
 
