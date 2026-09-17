@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 3 active status categories.
+**28 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 22 |
+| **Done** | Accepted, integrated, and durably verified | 23 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -55,7 +55,7 @@ flowchart LR
         AR_0025["AR-0025 - Planned"]:::status_planned
         AR_0026["AR-0026 - Done"]:::status_done
         AR_0027["AR-0027 - Done"]:::status_done
-        AR_0028["AR-0028 - In progress"]:::status_in_progress
+        AR_0028["AR-0028 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -153,12 +153,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0028](tasks/AR-0028.md): Transport retries and stale rejection | codex-awt-ar0028-20260917 | Make live transport retryable and stale-event safe. | Implement bounded retries and fail-closed handling for stale or rejected events. |
-
 ### Planned (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -169,7 +163,7 @@ flowchart LR
 | P1 | [AR-0016](tasks/AR-0016.md): Recorded terminal runtime tests | Unclaimed | Verify normal terminal runtime behavior against public contracts. | Drive the real TUI through recorded terminal input for a complete discussion-to-event round trip. |
 | P1 | [AR-0017](tasks/AR-0017.md): Recovery and reopen runtime tests | Unclaimed | Verify runtime recovery and conflict-reopen behavior. | Exercise interrupted save, stale resume, unresolved conflict, targeted reopen, and re-ask runtime paths. |
 
-### Done (22)
+### Done (23)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -184,6 +178,7 @@ flowchart LR
 | P0 | [AR-0018](tasks/AR-0018.md): Two-pane navigation and highlighting | Unclaimed | Build the actual two-pane discussion navigation UI. | Implement the two-pane document/discussion-point renderer, navigation, anchors, focus, resize, and unresolved highlighting. |
 | P0 | [AR-0026](tasks/AR-0026.md): Live TUI toolkit foundation | Unclaimed | Establish the toolkit-backed live TUI foundation. | Select and pin a suitable Python TUI/input toolkit, implement the live application event loop, and provide deterministic headless tests plus fallback behavior. |
 | P0 | [AR-0027](tasks/AR-0027.md): Session transport envelopes | Unclaimed | Define live TUI transport identity and acknowledgements. | Implement revision-bound session envelopes, event acknowledgements, and adapter correlation. |
+| P0 | [AR-0028](tasks/AR-0028.md): Transport retries and stale rejection | Unclaimed | Make live transport retryable and stale-event safe. | Implement bounded retries and fail-closed handling for stale or rejected events. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
