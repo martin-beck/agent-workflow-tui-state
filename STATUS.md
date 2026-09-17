@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**15 ARs tracked** across 2 active status categories.
+**15 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 6 |
+| **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 9 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -35,7 +35,7 @@ flowchart LR
         AR_0005["AR-0005 - Done"]:::status_done
         AR_0006["AR-0006 - Done"]:::status_done
         AR_0007["AR-0007 - Done"]:::status_done
-        AR_0008["AR-0008 - Planned"]:::status_planned
+        AR_0008["AR-0008 - Open"]:::status_open
         AR_0009["AR-0009 - Planned"]:::status_planned
         AR_0010["AR-0010 - Planned"]:::status_planned
         AR_0011["AR-0011 - Planned"]:::status_planned
@@ -101,11 +101,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (6)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0008](tasks/AR-0008.md): Coordinator lifecycle adapter | Unclaimed | Integrate the TUI with Coordinator as AR lifecycle authority. | Bind accepted TUI events to Coordinator task revisions, lifecycle transitions, and durable event references. |
+
+### Planned (5)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0009](tasks/AR-0009.md): AWG decision adapter | Unclaimed | Integrate TUI interaction with AWG decision semantics. | Consume AWG packet/decision/reconciliation contracts and emit provenance-preserving decision records. |
 | P0 | [AR-0010](tasks/AR-0010.md): AWQ quality and evidence adapter | Unclaimed | Integrate quality and evidence gates without turning them into user intent. | Integrate AWQ checks for schema, privacy, formal evidence, rendering, persistence, and truthful limitations. |
 | P1 | [AR-0011](tasks/AR-0011.md): Cross-project integration harness | Unclaimed | Verify cross-project TUI composition and hostile fail-closed traces. | Run deterministic offline composition tests across Coordinator, AWG, and AWQ public contracts. |
