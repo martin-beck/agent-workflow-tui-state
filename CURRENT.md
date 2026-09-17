@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0047](tasks/AR-0047.md): Visible revisable decision selections | Make accepted decision state explicit and revisable in the live TUI. | Render answered decisions with a checkmark and only the selected proposal while permitting replacement before exit. | - |
+| P0 | [AR-0047](tasks/AR-0047.md): Visible revisable decision selections | Make accepted decision state explicit and revisable in the live TUI. | Render answered decisions with a checkmark and only the selected proposal while permitting replacement before exit. | codex-awt-ar0047-20260917 |
 
 ## Done
 
