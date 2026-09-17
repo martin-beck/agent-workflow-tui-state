@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -76,7 +76,7 @@ flowchart LR
         AR_0046["AR-0046 - Done"]:::status_done
         AR_0047["AR-0047 - Done"]:::status_done
         AR_0048["AR-0048 - Done"]:::status_done
-        AR_0049["AR-0049 - Open"]:::status_open
+        AR_0049["AR-0049 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -226,11 +226,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | Unclaimed | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. |
+| P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | codex-awt-ar0049-20260917 | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. |
 
 ### Done (48)
 
