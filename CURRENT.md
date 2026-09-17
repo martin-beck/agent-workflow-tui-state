@@ -3,6 +3,15 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0038](tasks/AR-0038.md): Live document navigation and decision focus | Make document navigation and decision selection usable live. | Implement real workplan/design document panes, switching, decision selection, and visual highlighting in the live TUI. | - |
+| P0 | [AR-0039](tasks/AR-0039.md): Live proposal and batch interaction | Make every decision and proposal interaction usable live. | Implement real proposal selection, helper updates, batch decisions, and user-authored proposal input. | - |
+| P0 | [AR-0040](tasks/AR-0040.md): Terminal lifecycle cleanup | Make live TUI startup and shutdown clean and reversible. | Restore terminal state on every exit path and leave only concise final output. | - |
+| P0 | [AR-0041](tasks/AR-0041.md): Live scenario demo parity | Prove scenario demos exercise the same complete live UI. | Drive the real interactive TUI through representative scenarios and refresh demos/screenshots. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
