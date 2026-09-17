@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0025](tasks/AR-0025.md): Live AR/TUI session transport | Connect the full TUI session to autonomous AR execution. | Integrate completed transport sub-ARs into end-to-end autonomous session orchestration. | codex-awt-ar0025-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -31,6 +25,7 @@ Never edit this file directly.
 | P0 | [AR-0014](tasks/AR-0014.md): Formal TUI lifecycle model | Define the formal TUI lifecycle state machine. | Formalize the finite AR/TUI lifecycle and fail-closed transitions. | - |
 | P0 | [AR-0015](tasks/AR-0015.md): AR/TUI envelope contract | Define revision-bound TUI input and output envelopes. | Define strict AR context and TUI event envelope schemas. | - |
 | P0 | [AR-0018](tasks/AR-0018.md): Two-pane navigation and highlighting | Build the actual two-pane discussion navigation UI. | Implement the two-pane document/discussion-point renderer, navigation, anchors, focus, resize, and unresolved highlighting. | - |
+| P0 | [AR-0025](tasks/AR-0025.md): Live AR/TUI session transport | Connect the full TUI session to autonomous AR execution. | Integrate completed transport sub-ARs into end-to-end autonomous session orchestration. | - |
 | P0 | [AR-0026](tasks/AR-0026.md): Live TUI toolkit foundation | Establish the toolkit-backed live TUI foundation. | Select and pin a suitable Python TUI/input toolkit, implement the live application event loop, and provide deterministic headless tests plus fallback behavior. | - |
 | P0 | [AR-0027](tasks/AR-0027.md): Session transport envelopes | Define live TUI transport identity and acknowledgements. | Implement revision-bound session envelopes, event acknowledgements, and adapter correlation. | - |
 | P0 | [AR-0028](tasks/AR-0028.md): Transport retries and stale rejection | Make live transport retryable and stale-event safe. | Implement bounded retries and fail-closed handling for stale or rejected events. | - |
