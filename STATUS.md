@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**49 ARs tracked** across 2 active status categories.
+**49 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 48 |
+| **Done** | Accepted, integrated, and durably verified | 49 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -76,7 +76,7 @@ flowchart LR
         AR_0046["AR-0046 - Done"]:::status_done
         AR_0047["AR-0047 - Done"]:::status_done
         AR_0048["AR-0048 - Done"]:::status_done
-        AR_0049["AR-0049 - In progress"]:::status_in_progress
+        AR_0049["AR-0049 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -226,13 +226,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | codex-awt-ar0049-20260917 | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. |
-
-### Done (48)
+### Done (49)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -259,6 +253,7 @@ flowchart LR
 | P0 | [AR-0046](tasks/AR-0046.md): Anchor-aware document scrolling | Unclaimed | Keep selected decision text visible in the document pane. | Scroll the rendered Markdown document to the selected decision highlight and add PageUp/PageDown navigation. |
 | P0 | [AR-0047](tasks/AR-0047.md): Visible revisable decision selections | Unclaimed | Make accepted decision state explicit and revisable in the live TUI. | Render answered decisions with a checkmark and only the selected proposal while permitting replacement before exit. |
 | P0 | [AR-0048](tasks/AR-0048.md): Live scenario replay and asciinema documentation | Unclaimed | Make scenario demonstrations real TUI sessions with terminal recordings. | Replay corpus actions through the real prompt-toolkit application and generate human-speed asciinema recordings and documentation links. |
+| P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | Unclaimed | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |

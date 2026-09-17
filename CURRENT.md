@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. | codex-awt-ar0049-20260917 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -36,6 +30,7 @@ Never edit this file directly.
 | P0 | [AR-0046](tasks/AR-0046.md): Anchor-aware document scrolling | Keep selected decision text visible in the document pane. | Scroll the rendered Markdown document to the selected decision highlight and add PageUp/PageDown navigation. | - |
 | P0 | [AR-0047](tasks/AR-0047.md): Visible revisable decision selections | Make accepted decision state explicit and revisable in the live TUI. | Render answered decisions with a checkmark and only the selected proposal while permitting replacement before exit. | - |
 | P0 | [AR-0048](tasks/AR-0048.md): Live scenario replay and asciinema documentation | Make scenario demonstrations real TUI sessions with terminal recordings. | Replay corpus actions through the real prompt-toolkit application and generate human-speed asciinema recordings and documentation links. | - |
+| P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
