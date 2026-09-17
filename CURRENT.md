@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0029](tasks/AR-0029.md): Synthetic TUI scenario corpus | Define reproducible artificial TUI scenario inputs. | Create a schema-valid synthetic corpus covering diverse TUI interaction workflows. | - |
+| P1 | [AR-0029](tasks/AR-0029.md): Synthetic TUI scenario corpus | Define reproducible artificial TUI scenario inputs. | Create a schema-valid synthetic corpus covering diverse TUI interaction workflows. | codex-awt-ar0029-20260917 |
 
 ## Planned
 
