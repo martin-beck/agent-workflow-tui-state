@@ -4,5 +4,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-tui` | `feature/ar-0015-envelope-contract` | `934d829a91d0` | 1 | behind 0, ahead 1 |
+| `agent-workflow-tui` | `main` | `5583fda01f58` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `tests/__pycache__/` |
