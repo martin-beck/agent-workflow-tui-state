@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**26 ARs tracked** across 3 active status categories.
+**26 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 16 |
+| **Done** | Accepted, integrated, and durably verified | 17 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -47,7 +47,7 @@ flowchart LR
         AR_0017["AR-0017 - Planned"]:::status_planned
         AR_0018["AR-0018 - Done"]:::status_done
         AR_0019["AR-0019 - Done"]:::status_done
-        AR_0020["AR-0020 - In progress"]:::status_in_progress
+        AR_0020["AR-0020 - Done"]:::status_done
         AR_0021["AR-0021 - Planned"]:::status_planned
         AR_0022["AR-0022 - Planned"]:::status_planned
         AR_0023["AR-0023 - Planned"]:::status_planned
@@ -146,12 +146,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0020](tasks/AR-0020.md): Interactive decision controls | codex-awt-ar0020-20260917 | Connect terminal input to explicit per-point decision and reconciliation events. | Implement keyboard/user-input controls for select, reject, clarify, add proposal, safe exit, and reopen. |
-
 ### Planned (9)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -166,7 +160,7 @@ flowchart LR
 | P1 | [AR-0023](tasks/AR-0023.md): Reconciliation and conflict UI | Unclaimed | Implement the live conflict-resolution view and reopen loop. | Render reconciliation diffs, contradiction impact, affected ARs, and targeted reopen/discussion-required actions. |
 | P1 | [AR-0024](tasks/AR-0024.md): Anti-rubber-stamp interaction UI | Unclaimed | Make human choice informed, contestable, and authority-explicit. | Implement anti-rubber-stamp framing, authority context, evidence gaps, reject/clarify/more-evidence affordances, and explicit limitations. |
 
-### Done (16)
+### Done (17)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -186,3 +180,4 @@ flowchart LR
 | P1 | [AR-0007](tasks/AR-0007.md): Conflict reconciliation and reopen UI | Unclaimed | Provide explicit post-discussion conflict solution and reopen interaction. | Implement conflict/reconciliation views, targeted reopen, contradiction display, and AR continuation events. |
 | P1 | [AR-0011](tasks/AR-0011.md): Cross-project integration harness | Unclaimed | Verify cross-project TUI composition and hostile fail-closed traces. | Run deterministic offline composition tests across Coordinator, AWG, and AWQ public contracts. |
 | P1 | [AR-0019](tasks/AR-0019.md): Proposal and implication helper view | Unclaimed | Render the decision helper view beside the discussion panes. | Implement the helper view for ranked proposals, implications, confidence, trade-offs, evidence gaps, and affected ARs. |
+| P1 | [AR-0020](tasks/AR-0020.md): Interactive decision controls | Unclaimed | Connect terminal input to explicit per-point decision and reconciliation events. | Implement keyboard/user-input controls for select, reject, clarify, add proposal, safe exit, and reopen. |
