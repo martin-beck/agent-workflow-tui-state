@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**26 ARs tracked** across 3 active status categories.
+**26 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 20 |
+| **Done** | Accepted, integrated, and durably verified | 21 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -51,7 +51,7 @@ flowchart LR
         AR_0021["AR-0021 - Done"]:::status_done
         AR_0022["AR-0022 - Done"]:::status_done
         AR_0023["AR-0023 - Done"]:::status_done
-        AR_0024["AR-0024 - In progress"]:::status_in_progress
+        AR_0024["AR-0024 - Done"]:::status_done
         AR_0025["AR-0025 - Planned"]:::status_planned
         AR_0026["AR-0026 - Done"]:::status_done
     end
@@ -146,12 +146,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0024](tasks/AR-0024.md): Anti-rubber-stamp interaction UI | codex-awt-ar0024-20260917 | Make human choice informed, contestable, and authority-explicit. | Implement anti-rubber-stamp framing, authority context, evidence gaps, reject/clarify/more-evidence affordances, and explicit limitations. |
-
 ### Planned (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -162,7 +156,7 @@ flowchart LR
 | P1 | [AR-0016](tasks/AR-0016.md): Recorded terminal runtime tests | Unclaimed | Verify normal terminal runtime behavior against public contracts. | Drive the real TUI through recorded terminal input for a complete discussion-to-event round trip. |
 | P1 | [AR-0017](tasks/AR-0017.md): Recovery and reopen runtime tests | Unclaimed | Verify runtime recovery and conflict-reopen behavior. | Exercise interrupted save, stale resume, unresolved conflict, targeted reopen, and re-ask runtime paths. |
 
-### Done (20)
+### Done (21)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -186,3 +180,4 @@ flowchart LR
 | P1 | [AR-0021](tasks/AR-0021.md): Batched discussion UI | Unclaimed | Implement batched discussion interaction in the terminal UI. | Render batched independent discussion points, coupling warnings, partial responses, and per-point status in the live TUI. |
 | P1 | [AR-0022](tasks/AR-0022.md): Journal and continuation UI | Unclaimed | Implement visible persistence and continuation controls. | Expose journal history, safe exit, resume/re-ask, and future-request AR mapping in the live UI. |
 | P1 | [AR-0023](tasks/AR-0023.md): Reconciliation and conflict UI | Unclaimed | Implement the live conflict-resolution view and reopen loop. | Render reconciliation diffs, contradiction impact, affected ARs, and targeted reopen/discussion-required actions. |
+| P1 | [AR-0024](tasks/AR-0024.md): Anti-rubber-stamp interaction UI | Unclaimed | Make human choice informed, contestable, and authority-explicit. | Implement anti-rubber-stamp framing, authority context, evidence gaps, reject/clarify/more-evidence affordances, and explicit limitations. |
