@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0023](tasks/AR-0023.md): Reconciliation and conflict UI | Implement the live conflict-resolution view and reopen loop. | Render reconciliation diffs, contradiction impact, affected ARs, and targeted reopen/discussion-required actions. | codex-awt-ar0023-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -43,3 +37,4 @@ Never edit this file directly.
 | P1 | [AR-0020](tasks/AR-0020.md): Interactive decision controls | Connect terminal input to explicit per-point decision and reconciliation events. | Implement keyboard/user-input controls for select, reject, clarify, add proposal, safe exit, and reopen. | - |
 | P1 | [AR-0021](tasks/AR-0021.md): Batched discussion UI | Implement batched discussion interaction in the terminal UI. | Render batched independent discussion points, coupling warnings, partial responses, and per-point status in the live TUI. | - |
 | P1 | [AR-0022](tasks/AR-0022.md): Journal and continuation UI | Implement visible persistence and continuation controls. | Expose journal history, safe exit, resume/re-ask, and future-request AR mapping in the live UI. | - |
+| P1 | [AR-0023](tasks/AR-0023.md): Reconciliation and conflict UI | Implement the live conflict-resolution view and reopen loop. | Render reconciliation diffs, contradiction impact, affected ARs, and targeted reopen/discussion-required actions. | - |
