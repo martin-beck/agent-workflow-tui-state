@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**26 ARs tracked** across 2 active status categories.
+**26 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 11 |
+| **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 15 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -46,7 +46,7 @@ flowchart LR
         AR_0016["AR-0016 - Planned"]:::status_planned
         AR_0017["AR-0017 - Planned"]:::status_planned
         AR_0018["AR-0018 - Done"]:::status_done
-        AR_0019["AR-0019 - Planned"]:::status_planned
+        AR_0019["AR-0019 - Open"]:::status_open
         AR_0020["AR-0020 - Planned"]:::status_planned
         AR_0021["AR-0021 - Planned"]:::status_planned
         AR_0022["AR-0022 - Planned"]:::status_planned
@@ -146,7 +146,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (11)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0019](tasks/AR-0019.md): Proposal and implication helper view | Unclaimed | Render the decision helper view beside the discussion panes. | Implement the helper view for ranked proposals, implications, confidence, trade-offs, evidence gaps, and affected ARs. |
+
+### Planned (10)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -155,7 +161,6 @@ flowchart LR
 | P1 | [AR-0013](tasks/AR-0013.md): Release and operational qualification | Unclaimed | Publish a reproducible, supported TUI release. | Harden packaging, platform support, accessibility, privacy, signed release, and installation documentation. |
 | P1 | [AR-0016](tasks/AR-0016.md): Recorded terminal runtime tests | Unclaimed | Verify normal terminal runtime behavior against public contracts. | Drive the real TUI through recorded terminal input for a complete discussion-to-event round trip. |
 | P1 | [AR-0017](tasks/AR-0017.md): Recovery and reopen runtime tests | Unclaimed | Verify runtime recovery and conflict-reopen behavior. | Exercise interrupted save, stale resume, unresolved conflict, targeted reopen, and re-ask runtime paths. |
-| P1 | [AR-0019](tasks/AR-0019.md): Proposal and implication helper view | Unclaimed | Render the decision helper view beside the discussion panes. | Implement the helper view for ranked proposals, implications, confidence, trade-offs, evidence gaps, and affected ARs. |
 | P1 | [AR-0020](tasks/AR-0020.md): Interactive decision controls | Unclaimed | Connect terminal input to explicit per-point decision and reconciliation events. | Implement keyboard/user-input controls for select, reject, clarify, add proposal, safe exit, and reopen. |
 | P1 | [AR-0021](tasks/AR-0021.md): Batched discussion UI | Unclaimed | Implement batched discussion interaction in the terminal UI. | Render batched independent discussion points, coupling warnings, partial responses, and per-point status in the live TUI. |
 | P1 | [AR-0022](tasks/AR-0022.md): Journal and continuation UI | Unclaimed | Implement visible persistence and continuation controls. | Expose journal history, safe exit, resume/re-ask, and future-request AR mapping in the live UI. |
