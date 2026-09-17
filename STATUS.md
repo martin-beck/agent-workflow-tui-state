@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**37 ARs tracked** across 2 active status categories.
+**37 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 36 |
+| **Done** | Accepted, integrated, and durably verified | 37 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -64,7 +64,7 @@ flowchart LR
         AR_0034["AR-0034 - Done"]:::status_done
         AR_0035["AR-0035 - Done"]:::status_done
         AR_0036["AR-0036 - Done"]:::status_done
-        AR_0037["AR-0037 - In progress"]:::status_in_progress
+        AR_0037["AR-0037 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -182,13 +182,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0037](tasks/AR-0037.md): Interactive helper launcher portability | codex-awt-ar0037-20260917 | Fix direct helper launcher import resolution. | Make the zero-argument helper executable from the repository checkout without package installation. |
-
-### Done (36)
+### Done (37)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -228,3 +222,4 @@ flowchart LR
 | P1 | [AR-0034](tasks/AR-0034.md): Interactive scenario helper script | Unclaimed | Let users run and interact with any generated scenario locally. | Add a zero-argument interactive scenario helper that selects and runs a corpus workflow through the full-screen TUI. |
 | P1 | [AR-0035](tasks/AR-0035.md): Deterministic scenario artifact hardening | Unclaimed | Make scenario replay and generated screenshot artifacts fail closed and accessible. | Await PR #35 merge, then run the full product suite and freshness check through handoffctl. |
 | P1 | [AR-0036](tasks/AR-0036.md): Rich synthetic scenario inputs | Unclaimed | Strengthen scenario fixtures with complete decision-session use cases and syntax checks. | Add semantically distinct, strongly validated synthetic TUI scenario inputs. |
+| P1 | [AR-0037](tasks/AR-0037.md): Interactive helper launcher portability | Unclaimed | Fix direct helper launcher import resolution. | Make the zero-argument helper executable from the repository checkout without package installation. |

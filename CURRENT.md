@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0037](tasks/AR-0037.md): Interactive helper launcher portability | Fix direct helper launcher import resolution. | Make the zero-argument helper executable from the repository checkout without package installation. | codex-awt-ar0037-20260917 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -49,3 +43,4 @@ Never edit this file directly.
 | P1 | [AR-0034](tasks/AR-0034.md): Interactive scenario helper script | Let users run and interact with any generated scenario locally. | Add a zero-argument interactive scenario helper that selects and runs a corpus workflow through the full-screen TUI. | - |
 | P1 | [AR-0035](tasks/AR-0035.md): Deterministic scenario artifact hardening | Make scenario replay and generated screenshot artifacts fail closed and accessible. | Await PR #35 merge, then run the full product suite and freshness check through handoffctl. | - |
 | P1 | [AR-0036](tasks/AR-0036.md): Rich synthetic scenario inputs | Strengthen scenario fixtures with complete decision-session use cases and syntax checks. | Add semantically distinct, strongly validated synthetic TUI scenario inputs. | - |
+| P1 | [AR-0037](tasks/AR-0037.md): Interactive helper launcher portability | Fix direct helper launcher import resolution. | Make the zero-argument helper executable from the repository checkout without package installation. | - |
