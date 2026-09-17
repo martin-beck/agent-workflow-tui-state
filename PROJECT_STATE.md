@@ -15,7 +15,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35272080545 | `782d40292ce7` | push | TUI scenarios | in_progress:- |
+| 35272080545 | `782d40292ce7` | push | TUI scenarios | completed:success |
 | 35271977316 | `dfcc998a87e7` | pull_request | TUI scenarios | completed:success |
 | 35271971106 | `dfcc998a87e7` | push | TUI scenarios | completed:success |
 | 35271749434 | `6f8cce48c10b` | pull_request | TUI scenarios | completed:failure |

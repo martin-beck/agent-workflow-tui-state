@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**41 ARs tracked** across 1 active status categories.
+**42 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 41 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -69,6 +69,7 @@ flowchart LR
         AR_0039["AR-0039 - Done"]:::status_done
         AR_0040["AR-0040 - Done"]:::status_done
         AR_0041["AR-0041 - Done"]:::status_done
+        AR_0042["AR-0042 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -142,6 +143,7 @@ flowchart LR
     AR_0038 --> AR_0041
     AR_0039 --> AR_0041
     AR_0040 --> AR_0041
+    AR_0041 --> AR_0042
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -196,9 +198,16 @@ flowchart LR
 | [AR-0038](tasks/AR-0038.md) | [AR-0018](tasks/AR-0018.md), [AR-0019](tasks/AR-0019.md) | [AR-0040](tasks/AR-0040.md), [AR-0041](tasks/AR-0041.md) |
 | [AR-0039](tasks/AR-0039.md) | [AR-0020](tasks/AR-0020.md), [AR-0021](tasks/AR-0021.md), [AR-0024](tasks/AR-0024.md) | [AR-0041](tasks/AR-0041.md) |
 | [AR-0040](tasks/AR-0040.md) | [AR-0026](tasks/AR-0026.md), [AR-0038](tasks/AR-0038.md) | [AR-0041](tasks/AR-0041.md) |
-| [AR-0041](tasks/AR-0041.md) | [AR-0038](tasks/AR-0038.md), [AR-0039](tasks/AR-0039.md), [AR-0040](tasks/AR-0040.md) | None |
+| [AR-0041](tasks/AR-0041.md) | [AR-0038](tasks/AR-0038.md), [AR-0039](tasks/AR-0039.md), [AR-0040](tasks/AR-0040.md) | [AR-0042](tasks/AR-0042.md) |
+| [AR-0042](tasks/AR-0042.md) | [AR-0041](tasks/AR-0041.md) | None |
 
 ## Complete AR inventory
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0042](tasks/AR-0042.md): Default live demo and anchor highlighting | Unclaimed | Make the standalone TUI immediately demonstrate the complete interaction model. | Show a multi-decision workplan/design demo by default and visibly mark the active document anchor. |
 
 ### Done (41)
 
