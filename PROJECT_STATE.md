@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #40 | `feature/ar-0040-terminal-lifecycle-v2@e4752e606fb0` | `main` | UNKNOWN | COMPLETED:SUCCESS | fix: restore terminal after live TUI exits |
+| #40 | `feature/ar-0040-terminal-lifecycle-v2@e4752e606fb0` | `main` | DIRTY | COMPLETED:SUCCESS | fix: restore terminal after live TUI exits |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35271319311 | `86d5ac989d31` | push | TUI scenarios | in_progress:- |
+| 35271319311 | `86d5ac989d31` | push | TUI scenarios | completed:success |
 | 35271305311 | `a8dccbd04739` | pull_request | TUI scenarios | completed:success |
 | 35271302180 | `a8dccbd04739` | push | TUI scenarios | completed:success |
 | 35271240470 | `2708d12ab50a` | push | TUI scenarios | completed:success |
