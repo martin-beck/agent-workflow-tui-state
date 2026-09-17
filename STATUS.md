@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**47 ARs tracked** across 1 active status categories.
+**48 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 47 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -75,6 +75,7 @@ flowchart LR
         AR_0045["AR-0045 - Done"]:::status_done
         AR_0046["AR-0046 - Done"]:::status_done
         AR_0047["AR-0047 - Done"]:::status_done
+        AR_0048["AR-0048 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -156,6 +157,7 @@ flowchart LR
     AR_0044 --> AR_0045
     AR_0045 --> AR_0046
     AR_0046 --> AR_0047
+    AR_0047 --> AR_0048
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -216,9 +218,16 @@ flowchart LR
 | [AR-0044](tasks/AR-0044.md) | [AR-0038](tasks/AR-0038.md), [AR-0041](tasks/AR-0041.md) | [AR-0045](tasks/AR-0045.md) |
 | [AR-0045](tasks/AR-0045.md) | [AR-0044](tasks/AR-0044.md) | [AR-0046](tasks/AR-0046.md) |
 | [AR-0046](tasks/AR-0046.md) | [AR-0045](tasks/AR-0045.md) | [AR-0047](tasks/AR-0047.md) |
-| [AR-0047](tasks/AR-0047.md) | [AR-0046](tasks/AR-0046.md) | None |
+| [AR-0047](tasks/AR-0047.md) | [AR-0046](tasks/AR-0046.md) | [AR-0048](tasks/AR-0048.md) |
+| [AR-0048](tasks/AR-0048.md) | [AR-0047](tasks/AR-0047.md) | None |
 
 ## Complete AR inventory
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0048](tasks/AR-0048.md): Live scenario replay and asciinema documentation | Unclaimed | Make scenario demonstrations real TUI sessions with terminal recordings. | Replay corpus actions through the real prompt-toolkit application and generate human-speed asciinema recordings and documentation links. |
 
 ### Done (47)
 
