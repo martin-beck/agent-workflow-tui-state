@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0053](tasks/AR-0053.md): Cross-project TUI request and response contract | Ensure Guidance, TUI, Coordinator, and Quality share one revision-bound contract. | Wire canonical AWG decision requests and stable candidate identities into TUI inputs and outputs. | - |
+| P1 | [AR-0053](tasks/AR-0053.md): Cross-project TUI request and response contract | Ensure Guidance, TUI, Coordinator, and Quality share one revision-bound contract. | Wire canonical AWG decision requests and stable candidate identities into TUI inputs and outputs. | codex-awt-ar0053-20260918 |
 
 ## Done
 
