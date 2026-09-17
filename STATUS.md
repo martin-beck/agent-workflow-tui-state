@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
@@ -49,7 +49,7 @@ flowchart LR
         AR_0019["AR-0019 - Done"]:::status_done
         AR_0020["AR-0020 - Done"]:::status_done
         AR_0021["AR-0021 - Done"]:::status_done
-        AR_0022["AR-0022 - Open"]:::status_open
+        AR_0022["AR-0022 - In progress"]:::status_in_progress
         AR_0023["AR-0023 - Planned"]:::status_planned
         AR_0024["AR-0024 - Planned"]:::status_planned
         AR_0025["AR-0025 - Planned"]:::status_planned
@@ -146,11 +146,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0022](tasks/AR-0022.md): Journal and continuation UI | Unclaimed | Implement visible persistence and continuation controls. | Expose journal history, safe exit, resume/re-ask, and future-request AR mapping in the live UI. |
+| P1 | [AR-0022](tasks/AR-0022.md): Journal and continuation UI | codex-awt-ar0022-20260917 | Implement visible persistence and continuation controls. | Expose journal history, safe exit, resume/re-ask, and future-request AR mapping in the live UI. |
 
 ### Planned (7)
 
