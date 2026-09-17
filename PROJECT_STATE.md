@@ -12,14 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #33 | `feature/ar-0031-ci-doc-freshness@028855e29492` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: verify generated scenario docs and artifacts |
 | #34 | `feature/ar-0034-rich-scenarios@1ea46ef84854` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | test: expand synthetic TUI scenario corpus |
-| #35 | `feature/ar-0035-scenario-artifact-hardening@82748b429713` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS: | test: harden deterministic scenario artifact replay |
+| #35 | `feature/ar-0035-scenario-artifact-hardening@82748b429713` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: harden deterministic scenario artifact replay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35268882221 | `82748b429713` | pull_request | TUI scenarios | in_progress:- |
-| 35268875656 | `82748b429713` | push | TUI scenarios | in_progress:- |
+| 35268882221 | `82748b429713` | pull_request | TUI scenarios | completed:success |
+| 35268875656 | `82748b429713` | push | TUI scenarios | completed:success |
 | 35268705326 | `1ea46ef84854` | pull_request | TUI scenarios | completed:failure |
 | 35268700189 | `1ea46ef84854` | push | TUI scenarios | completed:failure |
 | 35268547554 | `028855e29492` | pull_request | TUI scenarios | completed:success |
