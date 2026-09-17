@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0050](tasks/AR-0050.md): Deterministic live recording artifacts | Prevent renderer timing bytes from making generated recordings flaky. | Canonicalize asciinema frames so repeated CI replay is deterministic while retaining human-paced real-TUI state transitions. | - |
+| P1 | [AR-0050](tasks/AR-0050.md): Deterministic live recording artifacts | Prevent renderer timing bytes from making generated recordings flaky. | Canonicalize asciinema frames so repeated CI replay is deterministic while retaining human-paced real-TUI state transitions. | codex-awt-ar0050-20260917 |
 
 ## Done
 

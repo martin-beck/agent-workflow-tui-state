@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -77,7 +77,7 @@ flowchart LR
         AR_0047["AR-0047 - Done"]:::status_done
         AR_0048["AR-0048 - Done"]:::status_done
         AR_0049["AR-0049 - Done"]:::status_done
-        AR_0050["AR-0050 - Open"]:::status_open
+        AR_0050["AR-0050 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -229,11 +229,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0050](tasks/AR-0050.md): Deterministic live recording artifacts | Unclaimed | Prevent renderer timing bytes from making generated recordings flaky. | Canonicalize asciinema frames so repeated CI replay is deterministic while retaining human-paced real-TUI state transitions. |
+| P1 | [AR-0050](tasks/AR-0050.md): Deterministic live recording artifacts | codex-awt-ar0050-20260917 | Prevent renderer timing bytes from making generated recordings flaky. | Canonicalize asciinema frames so repeated CI replay is deterministic while retaining human-paced real-TUI state transitions. |
 
 ### Done (49)
 
