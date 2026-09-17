@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0013](tasks/AR-0013.md): Release and operational qualification | Publish a reproducible, supported TUI release. | Harden packaging, platform support, accessibility, privacy, signed release, and installation documentation. | codex-awt-ar0013-20260917 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -32,6 +26,7 @@ Never edit this file directly.
 | P1 | [AR-0007](tasks/AR-0007.md): Conflict reconciliation and reopen UI | Provide explicit post-discussion conflict solution and reopen interaction. | Implement conflict/reconciliation views, targeted reopen, contradiction display, and AR continuation events. | - |
 | P1 | [AR-0011](tasks/AR-0011.md): Cross-project integration harness | Verify cross-project TUI composition and hostile fail-closed traces. | Run deterministic offline composition tests across Coordinator, AWG, and AWQ public contracts. | - |
 | P1 | [AR-0012](tasks/AR-0012.md): Runtime verification orchestration | Orchestrate runtime verification evidence and AR round trips. | Integrate the recorded-input and recovery runtime evidence into one release-bound report. | - |
+| P1 | [AR-0013](tasks/AR-0013.md): Release and operational qualification | Publish a reproducible, supported TUI release. | Harden packaging, platform support, accessibility, privacy, signed release, and installation documentation. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): Recorded terminal runtime tests | Verify normal terminal runtime behavior against public contracts. | Drive the real TUI through recorded terminal input for a complete discussion-to-event round trip. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): Recovery and reopen runtime tests | Verify runtime recovery and conflict-reopen behavior. | Exercise interrupted save, stale resume, unresolved conflict, targeted reopen, and re-ask runtime paths. | - |
 | P1 | [AR-0019](tasks/AR-0019.md): Proposal and implication helper view | Render the decision helper view beside the discussion panes. | Implement the helper view for ranked proposals, implications, confidence, trade-offs, evidence gaps, and affected ARs. | - |
