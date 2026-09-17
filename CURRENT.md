@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0053](tasks/AR-0053.md): Cross-project TUI request and response contract | Ensure Guidance, TUI, Coordinator, and Quality share one revision-bound contract. | Wire canonical AWG decision requests and stable candidate identities into TUI inputs and outputs. | codex-awt-ar0053-20260918 |
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0054](tasks/AR-0054.md): AR structure graph document and highlight projection | Prevent incorrect document context and highlight selection in live TUI sessions. | Derive Markdown documents and decision highlights from authoritative AR structure graph nodes. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
