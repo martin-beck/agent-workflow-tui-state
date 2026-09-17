@@ -9,11 +9,16 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0039](tasks/AR-0039.md): Live proposal and batch interaction | Make every decision and proposal interaction usable live. | Implement real proposal selection, helper updates, batch decisions, and user-authored proposal input. | codex-awt-ar0039-20260917 |
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0040](tasks/AR-0040.md): Terminal lifecycle cleanup | Make live TUI startup and shutdown clean and reversible. | Restore terminal state on every exit path and leave only concise final output. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0041](tasks/AR-0041.md): Live scenario demo parity | Prove scenario demos exercise the same complete live UI. | Drive the real interactive TUI through representative scenarios and refresh demos/screenshots. | - |
 
 ## Done
