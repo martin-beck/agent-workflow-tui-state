@@ -4,4 +4,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-tui` | `main` | `85bdd95356a8` | 0 | behind 0, ahead 0 |
+| `agent-workflow-tui` | `feature/ar-0003-session-boundary` | `7ff32b6b103a` | 0 | behind 0, ahead 1 |
