@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0039](tasks/AR-0039.md): Live proposal and batch interaction | Make every decision and proposal interaction usable live. | Implement real proposal selection, helper updates, batch decisions, and user-authored proposal input. | codex-awt-ar0039-20260917 |
 | P0 | [AR-0040](tasks/AR-0040.md): Terminal lifecycle cleanup | Make live TUI startup and shutdown clean and reversible. | Restore terminal state on every exit path and leave only concise final output. | codex-awt-ar0040-20260917 |
 
 ## Planned
@@ -34,6 +33,7 @@ Never edit this file directly.
 | P0 | [AR-0027](tasks/AR-0027.md): Session transport envelopes | Define live TUI transport identity and acknowledgements. | Implement revision-bound session envelopes, event acknowledgements, and adapter correlation. | - |
 | P0 | [AR-0028](tasks/AR-0028.md): Transport retries and stale rejection | Make live transport retryable and stale-event safe. | Implement bounded retries and fail-closed handling for stale or rejected events. | - |
 | P0 | [AR-0038](tasks/AR-0038.md): Live document navigation and decision focus | Make document navigation and decision selection usable live. | Implement real workplan/design document panes, switching, decision selection, and visual highlighting in the live TUI. | - |
+| P0 | [AR-0039](tasks/AR-0039.md): Live proposal and batch interaction | Make every decision and proposal interaction usable live. | Implement real proposal selection, helper updates, batch decisions, and user-authored proposal input. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
