@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0035](tasks/AR-0035.md): Deterministic scenario artifact hardening | Make scenario replay and generated screenshot artifacts fail closed and accessible. | Harden deterministic replay, freshness comparison, and accessible screenshot generation. | - |
+| P1 | [AR-0035](tasks/AR-0035.md): Deterministic scenario artifact hardening | Make scenario replay and generated screenshot artifacts fail closed and accessible. | Harden deterministic replay, freshness comparison, and accessible screenshot generation. | codex-awt-ar0035-20260917 |
 
 ## Planned
 
