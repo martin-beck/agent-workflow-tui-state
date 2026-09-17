@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | codex-awt-ar0005-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -32,3 +26,4 @@ Never edit this file directly.
 | P0 | [AR-0014](tasks/AR-0014.md): Formal TUI lifecycle model | Define the formal TUI lifecycle state machine. | Formalize the finite AR/TUI lifecycle and fail-closed transitions. | - |
 | P0 | [AR-0015](tasks/AR-0015.md): AR/TUI envelope contract | Define revision-bound TUI input and output envelopes. | Define strict AR context and TUI event envelope schemas. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
+| P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
