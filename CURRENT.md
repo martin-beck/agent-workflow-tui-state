@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): TUI bootstrap and ownership review | Bootstrap TUI ownership and implementation boundary. | Review the TUI project boundary and approve the split lifecycle and envelope contracts. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0002](tasks/AR-0002.md): Interactive TUI shell | Build the minimal interactive terminal shell. | Implement only the terminal shell lifecycle and bounded input loop. | - |
 | P0 | [AR-0003](tasks/AR-0003.md): AR context and TUI event adapter | Create the revision-bound input/output protocol between ARs and the TUI. | Implement strict AR context and typed TUI event envelopes with stale/cross-AR rejection. | - |
 | P0 | [AR-0008](tasks/AR-0008.md): Coordinator lifecycle adapter | Integrate the TUI with Coordinator as AR lifecycle authority. | Bind accepted TUI events to Coordinator task revisions, lifecycle transitions, and durable event references. | - |

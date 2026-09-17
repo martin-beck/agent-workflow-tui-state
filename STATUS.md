@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**15 ARs tracked** across 1 active status categories.
+**15 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 15 |
+| **Planned** | Defined work awaiting promotion or dependencies | 14 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 0 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -28,7 +28,7 @@ alternative.
 flowchart LR
     subgraph series_00["00 - Coordination foundation"]
         direction TB
-        AR_0001["AR-0001 - Planned"]:::status_planned
+        AR_0001["AR-0001 - Open"]:::status_open
         AR_0002["AR-0002 - Planned"]:::status_planned
         AR_0003["AR-0003 - Planned"]:::status_planned
         AR_0004["AR-0004 - Planned"]:::status_planned
@@ -100,11 +100,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (15)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): TUI bootstrap and ownership review | Unclaimed | Bootstrap TUI ownership and implementation boundary. | Review the TUI project boundary and approve the split lifecycle and envelope contracts. |
+
+### Planned (14)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0002](tasks/AR-0002.md): Interactive TUI shell | Unclaimed | Build the minimal interactive terminal shell. | Implement only the terminal shell lifecycle and bounded input loop. |
 | P0 | [AR-0003](tasks/AR-0003.md): AR context and TUI event adapter | Unclaimed | Create the revision-bound input/output protocol between ARs and the TUI. | Implement strict AR context and typed TUI event envelopes with stale/cross-AR rejection. |
 | P0 | [AR-0008](tasks/AR-0008.md): Coordinator lifecycle adapter | Unclaimed | Integrate the TUI with Coordinator as AR lifecycle authority. | Bind accepted TUI events to Coordinator task revisions, lifecycle transitions, and durable event references. |
