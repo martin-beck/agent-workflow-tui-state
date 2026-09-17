@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0052](tasks/AR-0052.md): Modal own-proposal editing and guarded exit | Make own-proposal editing safe, navigable, and reviewable before commit. | Implement the four-field own-proposal form, explicit confirmation, visible progress/saved status, and guarded exit prompt. | - |
+| P1 | [AR-0052](tasks/AR-0052.md): Modal own-proposal editing and guarded exit | Make own-proposal editing safe, navigable, and reviewable before commit. | Implement the four-field own-proposal form, explicit confirmation, visible progress/saved status, and guarded exit prompt. | codex-awt-ar0052-20260918 |
 
 ## Done
 
