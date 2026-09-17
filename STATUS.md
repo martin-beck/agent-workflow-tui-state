@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**15 ARs tracked** across 3 active status categories.
+**15 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 7 |
+| **Done** | Accepted, integrated, and durably verified | 8 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -33,7 +33,7 @@ flowchart LR
         AR_0003["AR-0003 - Done"]:::status_done
         AR_0004["AR-0004 - Done"]:::status_done
         AR_0005["AR-0005 - Done"]:::status_done
-        AR_0006["AR-0006 - In progress"]:::status_in_progress
+        AR_0006["AR-0006 - Done"]:::status_done
         AR_0007["AR-0007 - Planned"]:::status_planned
         AR_0008["AR-0008 - Planned"]:::status_planned
         AR_0009["AR-0009 - Planned"]:::status_planned
@@ -101,12 +101,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | codex-awt-ar0006-20260917 | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
-
 ### Planned (7)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -119,7 +113,7 @@ flowchart LR
 | P1 | [AR-0012](tasks/AR-0012.md): End-to-end runtime verification | Unclaimed | Prove runtime behavior and AR input/output round trips. | Exercise the real terminal application with recorded input, end-to-end AR fixtures, and recovery scenarios. |
 | P1 | [AR-0013](tasks/AR-0013.md): Release and operational qualification | Unclaimed | Publish a reproducible, supported TUI release. | Harden packaging, platform support, accessibility, privacy, signed release, and installation documentation. |
 
-### Done (7)
+### Done (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -130,3 +124,4 @@ flowchart LR
 | P0 | [AR-0015](tasks/AR-0015.md): AR/TUI envelope contract | Unclaimed | Define revision-bound TUI input and output envelopes. | Define strict AR context and TUI event envelope schemas. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
+| P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
