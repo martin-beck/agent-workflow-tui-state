@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**43 ARs tracked** across 2 active status categories.
+**44 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 42 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -71,6 +71,7 @@ flowchart LR
         AR_0041["AR-0041 - Done"]:::status_done
         AR_0042["AR-0042 - Done"]:::status_done
         AR_0043["AR-0043 - In progress"]:::status_in_progress
+        AR_0044["AR-0044 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -142,10 +143,12 @@ flowchart LR
     AR_0034 --> AR_0037
     AR_0038 --> AR_0040
     AR_0038 --> AR_0041
+    AR_0038 --> AR_0044
     AR_0039 --> AR_0041
     AR_0040 --> AR_0041
     AR_0041 --> AR_0042
     AR_0041 --> AR_0043
+    AR_0041 --> AR_0044
     AR_0042 --> AR_0043
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -198,12 +201,13 @@ flowchart LR
 | [AR-0035](tasks/AR-0035.md) | [AR-0030](tasks/AR-0030.md), [AR-0033](tasks/AR-0033.md) | None |
 | [AR-0036](tasks/AR-0036.md) | [AR-0033](tasks/AR-0033.md) | None |
 | [AR-0037](tasks/AR-0037.md) | [AR-0034](tasks/AR-0034.md) | None |
-| [AR-0038](tasks/AR-0038.md) | [AR-0018](tasks/AR-0018.md), [AR-0019](tasks/AR-0019.md) | [AR-0040](tasks/AR-0040.md), [AR-0041](tasks/AR-0041.md) |
+| [AR-0038](tasks/AR-0038.md) | [AR-0018](tasks/AR-0018.md), [AR-0019](tasks/AR-0019.md) | [AR-0040](tasks/AR-0040.md), [AR-0041](tasks/AR-0041.md), [AR-0044](tasks/AR-0044.md) |
 | [AR-0039](tasks/AR-0039.md) | [AR-0020](tasks/AR-0020.md), [AR-0021](tasks/AR-0021.md), [AR-0024](tasks/AR-0024.md) | [AR-0041](tasks/AR-0041.md) |
 | [AR-0040](tasks/AR-0040.md) | [AR-0026](tasks/AR-0026.md), [AR-0038](tasks/AR-0038.md) | [AR-0041](tasks/AR-0041.md) |
-| [AR-0041](tasks/AR-0041.md) | [AR-0038](tasks/AR-0038.md), [AR-0039](tasks/AR-0039.md), [AR-0040](tasks/AR-0040.md) | [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md) |
+| [AR-0041](tasks/AR-0041.md) | [AR-0038](tasks/AR-0038.md), [AR-0039](tasks/AR-0039.md), [AR-0040](tasks/AR-0040.md) | [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md), [AR-0044](tasks/AR-0044.md) |
 | [AR-0042](tasks/AR-0042.md) | [AR-0041](tasks/AR-0041.md) | [AR-0043](tasks/AR-0043.md) |
 | [AR-0043](tasks/AR-0043.md) | [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md) | None |
+| [AR-0044](tasks/AR-0044.md) | [AR-0038](tasks/AR-0038.md), [AR-0041](tasks/AR-0041.md) | None |
 
 ## Complete AR inventory
 
@@ -212,6 +216,12 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0043](tasks/AR-0043.md): Live scenario runner parity | codex-awt-ar0043-20260917 | Ensure scenario screenshots exercise the real multi-pane TUI model. | Instantiate the live application model for each scenario replay and include document/decision state in generated demos. |
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0044](tasks/AR-0044.md): Markdown document rendering | Unclaimed | Make document panes real Markdown terminal views. | Render Markdown design/workplan documents through a pinned terminal Markdown renderer in the live TUI and demos. |
 
 ### Done (42)
 
