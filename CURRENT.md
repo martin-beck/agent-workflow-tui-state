@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0034](tasks/AR-0034.md): Rich synthetic scenario inputs | Strengthen scenario fixtures with complete decision-session use cases and syntax checks. | Add semantically distinct, strongly validated synthetic TUI scenario inputs. | codex-awt-ar0034-20260917 |
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0035](tasks/AR-0035.md): Deterministic scenario artifact hardening | Make scenario replay and generated screenshot artifacts fail closed and accessible. | Harden deterministic replay, freshness comparison, and accessible screenshot generation. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |

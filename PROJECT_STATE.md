@@ -10,11 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #33 | `feature/ar-0031-ci-doc-freshness@028855e29492` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: verify generated scenario docs and artifacts |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35268547554 | `028855e29492` | pull_request | TUI scenarios | completed:success |
+| 35268532782 | `028855e29492` | push | TUI scenarios | completed:success |
 | 35267637771 | `da8347659dba` | push | TUI scenarios | completed:success |
 | 35267629819 | `e4b3c3fc035a` | pull_request | TUI scenarios | completed:success |
 | 35267624940 | `e4b3c3fc035a` | push | TUI scenarios | completed:success |
