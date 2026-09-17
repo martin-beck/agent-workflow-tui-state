@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0014](tasks/AR-0014.md): Formal TUI lifecycle model | Define the formal TUI lifecycle state machine. | Formalize the finite AR/TUI lifecycle and fail-closed transitions. | - |
+| P0 | [AR-0014](tasks/AR-0014.md): Formal TUI lifecycle model | Define the formal TUI lifecycle state machine. | Formalize the finite AR/TUI lifecycle and fail-closed transitions. | codex-awt-ar0014-20260917 |
 
 ## Planned
 

@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
@@ -41,7 +41,7 @@ flowchart LR
         AR_0011["AR-0011 - Planned"]:::status_planned
         AR_0012["AR-0012 - Planned"]:::status_planned
         AR_0013["AR-0013 - Planned"]:::status_planned
-        AR_0014["AR-0014 - Open"]:::status_open
+        AR_0014["AR-0014 - In progress"]:::status_in_progress
         AR_0015["AR-0015 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -100,11 +100,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0014](tasks/AR-0014.md): Formal TUI lifecycle model | Unclaimed | Define the formal TUI lifecycle state machine. | Formalize the finite AR/TUI lifecycle and fail-closed transitions. |
+| P0 | [AR-0014](tasks/AR-0014.md): Formal TUI lifecycle model | codex-awt-ar0014-20260917 | Define the formal TUI lifecycle state machine. | Formalize the finite AR/TUI lifecycle and fail-closed transitions. |
 
 ### Planned (13)
 
