@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0053](tasks/AR-0053.md): Cross-project TUI request and response contract | Ensure Guidance, TUI, Coordinator, and Quality share one revision-bound contract. | Wire canonical AWG decision requests and stable candidate identities into TUI inputs and outputs. | codex-awt-ar0053-20260918 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -71,3 +65,4 @@ Never edit this file directly.
 | P1 | [AR-0050](tasks/AR-0050.md): Deterministic live recording artifacts | Prevent renderer timing bytes from making generated recordings flaky. | Canonicalize asciinema frames so repeated CI replay is deterministic while retaining human-paced real-TUI state transitions. | - |
 | P1 | [AR-0051](tasks/AR-0051.md): Fixed pane geometry and responsive resize | Keep pane geometry stable while supporting terminal resizing. | Give TUI panes explicit bounded dimensions and verify complete full-screen layout behavior across terminal resize events. | - |
 | P1 | [AR-0052](tasks/AR-0052.md): Modal own-proposal editing and guarded exit | Make own-proposal editing safe, navigable, and reviewable before commit. | Implement the four-field own-proposal form, explicit confirmation, visible progress/saved status, and guarded exit prompt. | - |
+| P1 | [AR-0053](tasks/AR-0053.md): Cross-project TUI request and response contract | Ensure Guidance, TUI, Coordinator, and Quality share one revision-bound contract. | Wire canonical AWG decision requests and stable candidate identities into TUI inputs and outputs. | - |
