@@ -2,31 +2,30 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `da8347659dba4073e4c5d927a117611a5be697b2`
-- Local origin/main: `da8347659dba4073e4c5d927a117611a5be697b2`
-- Primary worktree head: `1ea46ef848542dcba8b3b1deb3040347170c8164`
+- Product remote main: `9a8a3e5c8bff98aa4da3b6c7d88d0eb7d52fbacb`
+- Local origin/main: `9a8a3e5c8bff98aa4da3b6c7d88d0eb7d52fbacb`
+- Primary worktree head: `9a8a3e5c8bff98aa4da3b6c7d88d0eb7d52fbacb`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #33 | `feature/ar-0031-ci-doc-freshness@028855e29492` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: verify generated scenario docs and artifacts |
-| #34 | `feature/ar-0034-rich-scenarios@1ea46ef84854` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | test: expand synthetic TUI scenario corpus |
-| #35 | `feature/ar-0035-scenario-artifact-hardening@82748b429713` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: harden deterministic scenario artifact replay |
+| #33 | `feature/ar-0031-ci-doc-freshness@028855e29492` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: verify generated scenario docs and artifacts |
+| #35 | `feature/ar-0035-scenario-artifact-hardening@82748b429713` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: harden deterministic scenario artifact replay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35268882221 | `82748b429713` | pull_request | TUI scenarios | completed:success |
-| 35268875656 | `82748b429713` | push | TUI scenarios | completed:success |
-| 35268705326 | `1ea46ef84854` | pull_request | TUI scenarios | completed:failure |
-| 35268700189 | `1ea46ef84854` | push | TUI scenarios | completed:failure |
-| 35268547554 | `028855e29492` | pull_request | TUI scenarios | completed:success |
-| 35268532782 | `028855e29492` | push | TUI scenarios | completed:success |
-| 35267637771 | `da8347659dba` | push | TUI scenarios | completed:success |
-| 35267629819 | `e4b3c3fc035a` | pull_request | TUI scenarios | completed:success |
-| 35267624940 | `e4b3c3fc035a` | push | TUI scenarios | completed:success |
-| 35267482745 | `92ca8186fe0f` | push | TUI scenarios | completed:success |
-| 35267475260 | `fa7b73b9ed82` | pull_request | TUI scenarios | completed:success |
-| 35267475218 | `fa7b73b9ed82` | push | TUI scenarios | completed:success |
+| 35269183413 | `9a8a3e5c8bff` | push | TUI scenarios | in_progress:- |
+| 35269135317 | `7daeb9a88339` | pull_request | TUI scenarios | completed:success |
+| 35269131276 | `7daeb9a88339` | push | TUI scenarios | completed:success |
+| 35269111428 | `23219ce992b8` | push | TUI scenarios | completed:success |
+| 35269067695 | `609c3a93dc5d` | pull_request | TUI scenarios | completed:success |
+| 35269063334 | `609c3a93dc5d` | push | TUI scenarios | completed:success |
+| 35269050747 | `da8760fb1c31` | pull_request | TUI scenarios | completed:success |
+| 35269046953 | `da8760fb1c31` | push | TUI scenarios | completed:success |
+| 35269034123 | `8b04e152ae4d` | pull_request | TUI scenarios | completed:failure |
+| 35269029611 | `8b04e152ae4d` | push | TUI scenarios | completed:failure |
+| 35268997057 | `7928cc5eca0d` | pull_request | TUI scenarios | completed:failure |
+| 35268992000 | `7928cc5eca0d` | push | TUI scenarios | completed:failure |
