@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**49 ARs tracked** across 1 active status categories.
+**50 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 49 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -77,6 +77,7 @@ flowchart LR
         AR_0047["AR-0047 - Done"]:::status_done
         AR_0048["AR-0048 - Done"]:::status_done
         AR_0049["AR-0049 - Done"]:::status_done
+        AR_0050["AR-0050 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -160,6 +161,7 @@ flowchart LR
     AR_0046 --> AR_0047
     AR_0047 --> AR_0048
     AR_0048 --> AR_0049
+    AR_0049 --> AR_0050
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -222,9 +224,16 @@ flowchart LR
 | [AR-0046](tasks/AR-0046.md) | [AR-0045](tasks/AR-0045.md) | [AR-0047](tasks/AR-0047.md) |
 | [AR-0047](tasks/AR-0047.md) | [AR-0046](tasks/AR-0046.md) | [AR-0048](tasks/AR-0048.md) |
 | [AR-0048](tasks/AR-0048.md) | [AR-0047](tasks/AR-0047.md) | [AR-0049](tasks/AR-0049.md) |
-| [AR-0049](tasks/AR-0049.md) | [AR-0048](tasks/AR-0048.md) | None |
+| [AR-0049](tasks/AR-0049.md) | [AR-0048](tasks/AR-0048.md) | [AR-0050](tasks/AR-0050.md) |
+| [AR-0050](tasks/AR-0050.md) | [AR-0049](tasks/AR-0049.md) | None |
 
 ## Complete AR inventory
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0050](tasks/AR-0050.md): Deterministic live recording artifacts | Unclaimed | Prevent renderer timing bytes from making generated recordings flaky. | Canonicalize asciinema frames so repeated CI replay is deterministic while retaining human-paced real-TUI state transitions. |
 
 ### Done (49)
 
