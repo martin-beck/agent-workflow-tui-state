@@ -10,8 +10,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #33 | `feature/ar-0031-ci-doc-freshness@028855e29492` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: verify generated scenario docs and artifacts |
-| #35 | `feature/ar-0035-scenario-artifact-hardening@82748b429713` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: harden deterministic scenario artifact replay |
+| #33 | `feature/ar-0031-ci-doc-freshness@028855e29492` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: verify generated scenario docs and artifacts |
+| #35 | `feature/ar-0035-scenario-artifact-hardening@82748b429713` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: harden deterministic scenario artifact replay |
 
 ## Recent workflows
 
