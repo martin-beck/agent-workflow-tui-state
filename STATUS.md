@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**36 ARs tracked** across 2 active status categories.
+**36 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 35 |
+| **Done** | Accepted, integrated, and durably verified | 36 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -62,7 +62,7 @@ flowchart LR
         AR_0032["AR-0032 - Done"]:::status_done
         AR_0033["AR-0033 - Done"]:::status_done
         AR_0034["AR-0034 - Done"]:::status_done
-        AR_0035["AR-0035 - In progress"]:::status_in_progress
+        AR_0035["AR-0035 - Done"]:::status_done
         AR_0036["AR-0036 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -179,13 +179,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0035](tasks/AR-0035.md): Deterministic scenario artifact hardening | codex-awt-ar0035-20260917 | Make scenario replay and generated screenshot artifacts fail closed and accessible. | Await PR #35 merge, then run the full product suite and freshness check through handoffctl. |
-
-### Done (35)
+### Done (36)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -223,4 +217,5 @@ flowchart LR
 | P1 | [AR-0032](tasks/AR-0032.md): Generated scenario documentation | Unclaimed | Publish accessible scenario workflows from generated artifacts. | Generate Markdown scenario/workflow documentation linking each input, action trace, and screenshot. |
 | P1 | [AR-0033](tasks/AR-0033.md): Control coverage freshness invariant | Unclaimed | Require corpus extension when TUI functionality grows. | Fail scenario validation when a live control lacks corpus coverage. |
 | P1 | [AR-0034](tasks/AR-0034.md): Interactive scenario helper script | Unclaimed | Let users run and interact with any generated scenario locally. | Add a zero-argument interactive scenario helper that selects and runs a corpus workflow through the full-screen TUI. |
+| P1 | [AR-0035](tasks/AR-0035.md): Deterministic scenario artifact hardening | Unclaimed | Make scenario replay and generated screenshot artifacts fail closed and accessible. | Await PR #35 merge, then run the full product suite and freshness check through handoffctl. |
 | P1 | [AR-0036](tasks/AR-0036.md): Rich synthetic scenario inputs | Unclaimed | Strengthen scenario fixtures with complete decision-session use cases and syntax checks. | Add semantically distinct, strongly validated synthetic TUI scenario inputs. |
