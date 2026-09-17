@@ -1,8 +1,8 @@
 {
   "commit_signoff": true,
-  "project_id": "b198e60f-502b-4788-8e3b-daf2c8c7b71d",
-  "project_name": "agent-workflow-guidance",
-  "project_title": "Agent Workflow Guidance",
+  "project_id": "de02a2e3-4f6f-4b83-b3d2-21f93064a662",
+  "project_name": "agent-workflow-tui",
+  "project_title": "Agent Workflow TUI",
   "schema_version": 1,
   "status_view": true
 }
