@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**20 ARs tracked** across 3 active status categories.
+**26 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 6 |
+| **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 13 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -48,6 +48,12 @@ flowchart LR
         AR_0018["AR-0018 - In progress"]:::status_in_progress
         AR_0019["AR-0019 - Planned"]:::status_planned
         AR_0020["AR-0020 - Planned"]:::status_planned
+        AR_0021["AR-0021 - Planned"]:::status_planned
+        AR_0022["AR-0022 - Planned"]:::status_planned
+        AR_0023["AR-0023 - Planned"]:::status_planned
+        AR_0024["AR-0024 - Planned"]:::status_planned
+        AR_0025["AR-0025 - Planned"]:::status_planned
+        AR_0026["AR-0026 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -65,14 +71,20 @@ flowchart LR
     AR_0005 --> AR_0006
     AR_0005 --> AR_0009
     AR_0005 --> AR_0020
+    AR_0005 --> AR_0021
     AR_0006 --> AR_0007
     AR_0006 --> AR_0008
     AR_0006 --> AR_0010
+    AR_0006 --> AR_0022
     AR_0007 --> AR_0009
     AR_0007 --> AR_0011
+    AR_0007 --> AR_0023
     AR_0008 --> AR_0011
+    AR_0008 --> AR_0025
     AR_0009 --> AR_0011
+    AR_0009 --> AR_0025
     AR_0010 --> AR_0011
+    AR_0010 --> AR_0025
     AR_0011 --> AR_0016
     AR_0011 --> AR_0017
     AR_0012 --> AR_0013
@@ -83,7 +95,14 @@ flowchart LR
     AR_0017 --> AR_0012
     AR_0018 --> AR_0019
     AR_0018 --> AR_0020
+    AR_0018 --> AR_0021
+    AR_0018 --> AR_0022
+    AR_0018 --> AR_0023
+    AR_0018 --> AR_0026
     AR_0019 --> AR_0020
+    AR_0019 --> AR_0024
+    AR_0020 --> AR_0024
+    AR_0020 --> AR_0025
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -102,12 +121,12 @@ flowchart LR
 | [AR-0002](tasks/AR-0002.md) | [AR-0001](tasks/AR-0001.md), [AR-0014](tasks/AR-0014.md) | [AR-0004](tasks/AR-0004.md), [AR-0018](tasks/AR-0018.md) |
 | [AR-0003](tasks/AR-0003.md) | [AR-0001](tasks/AR-0001.md), [AR-0015](tasks/AR-0015.md) | [AR-0004](tasks/AR-0004.md), [AR-0008](tasks/AR-0008.md), [AR-0010](tasks/AR-0010.md) |
 | [AR-0004](tasks/AR-0004.md) | [AR-0002](tasks/AR-0002.md), [AR-0003](tasks/AR-0003.md) | [AR-0005](tasks/AR-0005.md), [AR-0009](tasks/AR-0009.md), [AR-0018](tasks/AR-0018.md), [AR-0019](tasks/AR-0019.md) |
-| [AR-0005](tasks/AR-0005.md) | [AR-0004](tasks/AR-0004.md) | [AR-0006](tasks/AR-0006.md), [AR-0009](tasks/AR-0009.md), [AR-0020](tasks/AR-0020.md) |
-| [AR-0006](tasks/AR-0006.md) | [AR-0005](tasks/AR-0005.md) | [AR-0007](tasks/AR-0007.md), [AR-0008](tasks/AR-0008.md), [AR-0010](tasks/AR-0010.md) |
-| [AR-0007](tasks/AR-0007.md) | [AR-0006](tasks/AR-0006.md) | [AR-0009](tasks/AR-0009.md), [AR-0011](tasks/AR-0011.md) |
-| [AR-0008](tasks/AR-0008.md) | [AR-0003](tasks/AR-0003.md), [AR-0006](tasks/AR-0006.md) | [AR-0011](tasks/AR-0011.md) |
-| [AR-0009](tasks/AR-0009.md) | [AR-0004](tasks/AR-0004.md), [AR-0005](tasks/AR-0005.md), [AR-0007](tasks/AR-0007.md) | [AR-0011](tasks/AR-0011.md) |
-| [AR-0010](tasks/AR-0010.md) | [AR-0003](tasks/AR-0003.md), [AR-0006](tasks/AR-0006.md) | [AR-0011](tasks/AR-0011.md) |
+| [AR-0005](tasks/AR-0005.md) | [AR-0004](tasks/AR-0004.md) | [AR-0006](tasks/AR-0006.md), [AR-0009](tasks/AR-0009.md), [AR-0020](tasks/AR-0020.md), [AR-0021](tasks/AR-0021.md) |
+| [AR-0006](tasks/AR-0006.md) | [AR-0005](tasks/AR-0005.md) | [AR-0007](tasks/AR-0007.md), [AR-0008](tasks/AR-0008.md), [AR-0010](tasks/AR-0010.md), [AR-0022](tasks/AR-0022.md) |
+| [AR-0007](tasks/AR-0007.md) | [AR-0006](tasks/AR-0006.md) | [AR-0009](tasks/AR-0009.md), [AR-0011](tasks/AR-0011.md), [AR-0023](tasks/AR-0023.md) |
+| [AR-0008](tasks/AR-0008.md) | [AR-0003](tasks/AR-0003.md), [AR-0006](tasks/AR-0006.md) | [AR-0011](tasks/AR-0011.md), [AR-0025](tasks/AR-0025.md) |
+| [AR-0009](tasks/AR-0009.md) | [AR-0004](tasks/AR-0004.md), [AR-0005](tasks/AR-0005.md), [AR-0007](tasks/AR-0007.md) | [AR-0011](tasks/AR-0011.md), [AR-0025](tasks/AR-0025.md) |
+| [AR-0010](tasks/AR-0010.md) | [AR-0003](tasks/AR-0003.md), [AR-0006](tasks/AR-0006.md) | [AR-0011](tasks/AR-0011.md), [AR-0025](tasks/AR-0025.md) |
 | [AR-0011](tasks/AR-0011.md) | [AR-0007](tasks/AR-0007.md), [AR-0008](tasks/AR-0008.md), [AR-0009](tasks/AR-0009.md), [AR-0010](tasks/AR-0010.md) | [AR-0016](tasks/AR-0016.md), [AR-0017](tasks/AR-0017.md) |
 | [AR-0012](tasks/AR-0012.md) | [AR-0016](tasks/AR-0016.md), [AR-0017](tasks/AR-0017.md) | [AR-0013](tasks/AR-0013.md) |
 | [AR-0013](tasks/AR-0013.md) | [AR-0012](tasks/AR-0012.md) | None |
@@ -115,9 +134,15 @@ flowchart LR
 | [AR-0015](tasks/AR-0015.md) | [AR-0001](tasks/AR-0001.md), [AR-0014](tasks/AR-0014.md) | [AR-0003](tasks/AR-0003.md) |
 | [AR-0016](tasks/AR-0016.md) | [AR-0011](tasks/AR-0011.md) | [AR-0012](tasks/AR-0012.md) |
 | [AR-0017](tasks/AR-0017.md) | [AR-0011](tasks/AR-0011.md) | [AR-0012](tasks/AR-0012.md) |
-| [AR-0018](tasks/AR-0018.md) | [AR-0002](tasks/AR-0002.md), [AR-0004](tasks/AR-0004.md) | [AR-0019](tasks/AR-0019.md), [AR-0020](tasks/AR-0020.md) |
-| [AR-0019](tasks/AR-0019.md) | [AR-0004](tasks/AR-0004.md), [AR-0018](tasks/AR-0018.md) | [AR-0020](tasks/AR-0020.md) |
-| [AR-0020](tasks/AR-0020.md) | [AR-0005](tasks/AR-0005.md), [AR-0018](tasks/AR-0018.md), [AR-0019](tasks/AR-0019.md) | None |
+| [AR-0018](tasks/AR-0018.md) | [AR-0002](tasks/AR-0002.md), [AR-0004](tasks/AR-0004.md) | [AR-0019](tasks/AR-0019.md), [AR-0020](tasks/AR-0020.md), [AR-0021](tasks/AR-0021.md), [AR-0022](tasks/AR-0022.md), [AR-0023](tasks/AR-0023.md), [AR-0026](tasks/AR-0026.md) |
+| [AR-0019](tasks/AR-0019.md) | [AR-0004](tasks/AR-0004.md), [AR-0018](tasks/AR-0018.md) | [AR-0020](tasks/AR-0020.md), [AR-0024](tasks/AR-0024.md) |
+| [AR-0020](tasks/AR-0020.md) | [AR-0005](tasks/AR-0005.md), [AR-0018](tasks/AR-0018.md), [AR-0019](tasks/AR-0019.md) | [AR-0024](tasks/AR-0024.md), [AR-0025](tasks/AR-0025.md) |
+| [AR-0021](tasks/AR-0021.md) | [AR-0005](tasks/AR-0005.md), [AR-0018](tasks/AR-0018.md) | None |
+| [AR-0022](tasks/AR-0022.md) | [AR-0006](tasks/AR-0006.md), [AR-0018](tasks/AR-0018.md) | None |
+| [AR-0023](tasks/AR-0023.md) | [AR-0007](tasks/AR-0007.md), [AR-0018](tasks/AR-0018.md) | None |
+| [AR-0024](tasks/AR-0024.md) | [AR-0019](tasks/AR-0019.md), [AR-0020](tasks/AR-0020.md) | None |
+| [AR-0025](tasks/AR-0025.md) | [AR-0008](tasks/AR-0008.md), [AR-0009](tasks/AR-0009.md), [AR-0010](tasks/AR-0010.md), [AR-0020](tasks/AR-0020.md) | None |
+| [AR-0026](tasks/AR-0026.md) | [AR-0018](tasks/AR-0018.md) | None |
 
 ## Complete AR inventory
 
@@ -127,16 +152,22 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0018](tasks/AR-0018.md): Two-pane navigation and highlighting | codex-awt-ar0018-20260917 | Build the actual two-pane discussion navigation UI. | Implement the two-pane document/discussion-point renderer, navigation, anchors, focus, resize, and unresolved highlighting. |
 
-### Planned (6)
+### Planned (12)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0025](tasks/AR-0025.md): Live AR/TUI session transport | Unclaimed | Connect the full TUI session to autonomous AR execution. | Implement live transport/session orchestration, acknowledgements, retries, and fail-closed stale-event handling. |
+| P0 | [AR-0026](tasks/AR-0026.md): Live TUI toolkit foundation | Unclaimed | Establish the toolkit-backed live TUI foundation. | Select and pin a suitable Python TUI/input toolkit, implement the live application event loop, and provide deterministic headless tests plus fallback behavior. |
 | P1 | [AR-0012](tasks/AR-0012.md): Runtime verification orchestration | Unclaimed | Orchestrate runtime verification evidence and AR round trips. | Integrate the recorded-input and recovery runtime evidence into one release-bound report. |
 | P1 | [AR-0013](tasks/AR-0013.md): Release and operational qualification | Unclaimed | Publish a reproducible, supported TUI release. | Harden packaging, platform support, accessibility, privacy, signed release, and installation documentation. |
 | P1 | [AR-0016](tasks/AR-0016.md): Recorded terminal runtime tests | Unclaimed | Verify normal terminal runtime behavior against public contracts. | Drive the real TUI through recorded terminal input for a complete discussion-to-event round trip. |
 | P1 | [AR-0017](tasks/AR-0017.md): Recovery and reopen runtime tests | Unclaimed | Verify runtime recovery and conflict-reopen behavior. | Exercise interrupted save, stale resume, unresolved conflict, targeted reopen, and re-ask runtime paths. |
 | P1 | [AR-0019](tasks/AR-0019.md): Proposal and implication helper view | Unclaimed | Render the decision helper view beside the discussion panes. | Implement the helper view for ranked proposals, implications, confidence, trade-offs, evidence gaps, and affected ARs. |
 | P1 | [AR-0020](tasks/AR-0020.md): Interactive decision controls | Unclaimed | Connect terminal input to explicit per-point decision and reconciliation events. | Implement keyboard/user-input controls for select, reject, clarify, add proposal, safe exit, and reopen. |
+| P1 | [AR-0021](tasks/AR-0021.md): Batched discussion UI | Unclaimed | Implement batched discussion interaction in the terminal UI. | Render batched independent discussion points, coupling warnings, partial responses, and per-point status in the live TUI. |
+| P1 | [AR-0022](tasks/AR-0022.md): Journal and continuation UI | Unclaimed | Implement visible persistence and continuation controls. | Expose journal history, safe exit, resume/re-ask, and future-request AR mapping in the live UI. |
+| P1 | [AR-0023](tasks/AR-0023.md): Reconciliation and conflict UI | Unclaimed | Implement the live conflict-resolution view and reopen loop. | Render reconciliation diffs, contradiction impact, affected ARs, and targeted reopen/discussion-required actions. |
+| P1 | [AR-0024](tasks/AR-0024.md): Anti-rubber-stamp interaction UI | Unclaimed | Make human choice informed, contestable, and authority-explicit. | Implement anti-rubber-stamp framing, authority context, evidence gaps, reject/clarify/more-evidence affordances, and explicit limitations. |
 
 ### Done (13)
 
