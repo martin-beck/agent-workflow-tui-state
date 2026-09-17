@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0048](tasks/AR-0048.md): Live scenario replay and asciinema documentation | Make scenario demonstrations real TUI sessions with terminal recordings. | Replay corpus actions through the real prompt-toolkit application and generate human-speed asciinema recordings and documentation links. | - |
+| P0 | [AR-0048](tasks/AR-0048.md): Live scenario replay and asciinema documentation | Make scenario demonstrations real TUI sessions with terminal recordings. | Replay corpus actions through the real prompt-toolkit application and generate human-speed asciinema recordings and documentation links. | codex-awt-ar0048-20260917 |
 
 ## Done
 
