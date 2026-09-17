@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
@@ -30,7 +30,7 @@ flowchart LR
         direction TB
         AR_0001["AR-0001 - Done"]:::status_done
         AR_0002["AR-0002 - Done"]:::status_done
-        AR_0003["AR-0003 - Open"]:::status_open
+        AR_0003["AR-0003 - In progress"]:::status_in_progress
         AR_0004["AR-0004 - Planned"]:::status_planned
         AR_0005["AR-0005 - Planned"]:::status_planned
         AR_0006["AR-0006 - Planned"]:::status_planned
@@ -101,11 +101,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0003](tasks/AR-0003.md): TUI event adapter implementation | Unclaimed | Connect revision-bound envelopes to TUI session boundaries. | Implement adapter transport and predecessor validation on top of the strict envelope schemas. |
+| P0 | [AR-0003](tasks/AR-0003.md): TUI event adapter implementation | codex-awt-ar0003-20260917 | Connect revision-bound envelopes to TUI session boundaries. | Implement adapter transport and predecessor validation on top of the strict envelope schemas. |
 
 ### Planned (10)
 
