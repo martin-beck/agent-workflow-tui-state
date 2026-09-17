@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0038](tasks/AR-0038.md): Live document navigation and decision focus | Make document navigation and decision selection usable live. | Implement real workplan/design document panes, switching, decision selection, and visual highlighting in the live TUI. | codex-awt-ar0038-20260917 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0039](tasks/AR-0039.md): Live proposal and batch interaction | Make every decision and proposal interaction usable live. | Implement real proposal selection, helper updates, batch decisions, and user-authored proposal input. | - |
+| P0 | [AR-0039](tasks/AR-0039.md): Live proposal and batch interaction | Make every decision and proposal interaction usable live. | Implement real proposal selection, helper updates, batch decisions, and user-authored proposal input. | codex-awt-ar0039-20260917 |
 
 ## Planned
 
