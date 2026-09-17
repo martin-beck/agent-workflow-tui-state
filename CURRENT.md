@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0045](tasks/AR-0045.md): Visible active-anchor marker | Ensure anchor highlighting is visible in the live viewport. | Keep the active Markdown document anchor visible at the top of the document pane. | - |
+| P1 | [AR-0045](tasks/AR-0045.md): Visible active-anchor marker | Ensure anchor highlighting is visible in the live viewport. | Keep the active Markdown document anchor visible at the top of the document pane. | codex-awt-ar0045-20260917 |
 
 ## Done
 

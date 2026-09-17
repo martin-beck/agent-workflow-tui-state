@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -72,7 +72,7 @@ flowchart LR
         AR_0042["AR-0042 - Done"]:::status_done
         AR_0043["AR-0043 - Done"]:::status_done
         AR_0044["AR-0044 - Done"]:::status_done
-        AR_0045["AR-0045 - Open"]:::status_open
+        AR_0045["AR-0045 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -214,11 +214,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0045](tasks/AR-0045.md): Visible active-anchor marker | Unclaimed | Ensure anchor highlighting is visible in the live viewport. | Keep the active Markdown document anchor visible at the top of the document pane. |
+| P1 | [AR-0045](tasks/AR-0045.md): Visible active-anchor marker | codex-awt-ar0045-20260917 | Ensure anchor highlighting is visible in the live viewport. | Keep the active Markdown document anchor visible at the top of the document pane. |
 
 ### Done (44)
 
