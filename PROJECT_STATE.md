@@ -2,15 +2,14 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `a359fa0e2c24557d0e43d8397e9576512f328b2c`
-- Local origin/main: `a359fa0e2c24557d0e43d8397e9576512f328b2c`
-- Primary worktree head: `a77b69b4088617a9fcbdbc85b22b0f367faca45b`
+- Product remote main: `df173ad835abae9e30879466aef0d04ac9291206`
+- Local origin/main: `df173ad835abae9e30879466aef0d04ac9291206`
+- Primary worktree head: `df173ad835abae9e30879466aef0d04ac9291206`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #11 | `feature/ar-0010-awq-adapter@a77b69b40886` | `main` | CLEAN | - | feat: add AWQ evidence gate adapter |
 
 ## Recent workflows
 
