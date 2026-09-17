@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**32 ARs tracked** across 1 active status categories.
+**33 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 32 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -60,6 +60,7 @@ flowchart LR
         AR_0030["AR-0030 - Done"]:::status_done
         AR_0031["AR-0031 - Done"]:::status_done
         AR_0032["AR-0032 - Done"]:::status_done
+        AR_0033["AR-0033 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -116,6 +117,7 @@ flowchart LR
     AR_0029 --> AR_0030
     AR_0030 --> AR_0031
     AR_0030 --> AR_0032
+    AR_0031 --> AR_0033
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -160,10 +162,17 @@ flowchart LR
 | [AR-0028](tasks/AR-0028.md) | [AR-0027](tasks/AR-0027.md) | [AR-0025](tasks/AR-0025.md) |
 | [AR-0029](tasks/AR-0029.md) | [AR-0013](tasks/AR-0013.md) | [AR-0030](tasks/AR-0030.md) |
 | [AR-0030](tasks/AR-0030.md) | [AR-0029](tasks/AR-0029.md) | [AR-0031](tasks/AR-0031.md), [AR-0032](tasks/AR-0032.md) |
-| [AR-0031](tasks/AR-0031.md) | [AR-0030](tasks/AR-0030.md) | None |
+| [AR-0031](tasks/AR-0031.md) | [AR-0030](tasks/AR-0030.md) | [AR-0033](tasks/AR-0033.md) |
 | [AR-0032](tasks/AR-0032.md) | [AR-0030](tasks/AR-0030.md) | None |
+| [AR-0033](tasks/AR-0033.md) | [AR-0031](tasks/AR-0031.md) | None |
 
 ## Complete AR inventory
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0033](tasks/AR-0033.md): Control coverage freshness invariant | Unclaimed | Require corpus extension when TUI functionality grows. | Fail scenario validation when a live control lacks corpus coverage. |
 
 ### Done (32)
 

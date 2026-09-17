@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0033](tasks/AR-0033.md): Control coverage freshness invariant | Require corpus extension when TUI functionality grows. | Fail scenario validation when a live control lacks corpus coverage. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
