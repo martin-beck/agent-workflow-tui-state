@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0037](tasks/AR-0037.md): Interactive helper launcher portability | Fix direct helper launcher import resolution. | Make the zero-argument helper executable from the repository checkout without package installation. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
