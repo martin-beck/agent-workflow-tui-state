@@ -7,12 +7,14 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0001](tasks/AR-0001.md): TUI architecture and lifecycle contract | Establish the downstream TUI architecture and revision-bound AR interaction contract. | Define and formally check the TUI lifecycle, envelopes, ownership, and failure states. | - |
-| P0 | [AR-0002](tasks/AR-0002.md): Interactive TUI shell and navigation | Build the interactive terminal shell and discussion navigation model. | Implement the terminal shell, two-pane navigation, focus, resize, and accessibility behavior. | - |
+| P0 | [AR-0001](tasks/AR-0001.md): TUI bootstrap and ownership review | Bootstrap TUI ownership and implementation boundary. | Review the TUI project boundary and approve the split lifecycle and envelope contracts. | - |
+| P0 | [AR-0002](tasks/AR-0002.md): Interactive TUI shell | Build the minimal interactive terminal shell. | Implement only the terminal shell lifecycle and bounded input loop. | - |
 | P0 | [AR-0003](tasks/AR-0003.md): AR context and TUI event adapter | Create the revision-bound input/output protocol between ARs and the TUI. | Implement strict AR context and typed TUI event envelopes with stale/cross-AR rejection. | - |
 | P0 | [AR-0008](tasks/AR-0008.md): Coordinator lifecycle adapter | Integrate the TUI with Coordinator as AR lifecycle authority. | Bind accepted TUI events to Coordinator task revisions, lifecycle transitions, and durable event references. | - |
 | P0 | [AR-0009](tasks/AR-0009.md): AWG decision adapter | Integrate TUI interaction with AWG decision semantics. | Consume AWG packet/decision/reconciliation contracts and emit provenance-preserving decision records. | - |
 | P0 | [AR-0010](tasks/AR-0010.md): AWQ quality and evidence adapter | Integrate quality and evidence gates without turning them into user intent. | Integrate AWQ checks for schema, privacy, formal evidence, rendering, persistence, and truthful limitations. | - |
+| P0 | [AR-0014](tasks/AR-0014.md): Formal TUI lifecycle model | Define the formal TUI lifecycle state machine. | Formalize the finite AR/TUI lifecycle and fail-closed transitions. | - |
+| P0 | [AR-0015](tasks/AR-0015.md): AR/TUI envelope contract | Define revision-bound TUI input and output envelopes. | Define strict AR context and TUI event envelope schemas. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
