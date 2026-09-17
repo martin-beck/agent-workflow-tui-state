@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
@@ -47,7 +47,7 @@ flowchart LR
         AR_0017["AR-0017 - Planned"]:::status_planned
         AR_0018["AR-0018 - Done"]:::status_done
         AR_0019["AR-0019 - Done"]:::status_done
-        AR_0020["AR-0020 - Open"]:::status_open
+        AR_0020["AR-0020 - In progress"]:::status_in_progress
         AR_0021["AR-0021 - Planned"]:::status_planned
         AR_0022["AR-0022 - Planned"]:::status_planned
         AR_0023["AR-0023 - Planned"]:::status_planned
@@ -146,11 +146,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0020](tasks/AR-0020.md): Interactive decision controls | Unclaimed | Connect terminal input to explicit per-point decision and reconciliation events. | Implement keyboard/user-input controls for select, reject, clarify, add proposal, safe exit, and reopen. |
+| P1 | [AR-0020](tasks/AR-0020.md): Interactive decision controls | codex-awt-ar0020-20260917 | Connect terminal input to explicit per-point decision and reconciliation events. | Implement keyboard/user-input controls for select, reject, clarify, add proposal, safe exit, and reopen. |
 
 ### Planned (9)
 
