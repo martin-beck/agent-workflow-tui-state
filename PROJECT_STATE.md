@@ -2,9 +2,9 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `9fbffd347ca7deeb815ff1af3f431bbddb72c342`
-- Local origin/main: `9fbffd347ca7deeb815ff1af3f431bbddb72c342`
-- Primary worktree head: `9fbffd347ca7deeb815ff1af3f431bbddb72c342`
+- Product remote main: `9d390600e2317ff81f3eeca83366ab3722910689`
+- Local origin/main: `9d390600e2317ff81f3eeca83366ab3722910689`
+- Primary worktree head: `9d390600e2317ff81f3eeca83366ab3722910689`
 
 ## Open pull requests
 
@@ -15,6 +15,9 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35269798575 | `9d390600e231` | push | TUI scenarios | in_progress:- |
+| 35269751734 | `f2158a78bff7` | pull_request | TUI scenarios | completed:success |
+| 35269749347 | `f2158a78bff7` | push | TUI scenarios | completed:success |
 | 35269454317 | `9fbffd347ca7` | push | TUI scenarios | completed:success |
 | 35269405036 | `32dfc428d32c` | pull_request | TUI scenarios | completed:success |
 | 35269402172 | `32dfc428d32c` | push | TUI scenarios | completed:success |
@@ -24,6 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35269359808 | `7ccbf81f1a26` | pull_request | TUI scenarios | completed:success |
 | 35269355900 | `7ccbf81f1a26` | push | TUI scenarios | completed:success |
 | 35269235650 | `9677e8fb2409` | push | TUI scenarios | completed:failure |
-| 35269183413 | `9a8a3e5c8bff` | push | TUI scenarios | completed:success |
-| 35269135317 | `7daeb9a88339` | pull_request | TUI scenarios | completed:success |
-| 35269131276 | `7daeb9a88339` | push | TUI scenarios | completed:success |
