@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**41 ARs tracked** across 3 active status categories.
+**41 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 3 |
+| **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 37 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -66,7 +66,7 @@ flowchart LR
         AR_0036["AR-0036 - Done"]:::status_done
         AR_0037["AR-0037 - Done"]:::status_done
         AR_0038["AR-0038 - In progress"]:::status_in_progress
-        AR_0039["AR-0039 - Planned"]:::status_planned
+        AR_0039["AR-0039 - Open"]:::status_open
         AR_0040["AR-0040 - Planned"]:::status_planned
         AR_0041["AR-0041 - Planned"]:::status_planned
     end
@@ -206,11 +206,16 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0038](tasks/AR-0038.md): Live document navigation and decision focus | codex-awt-ar0038-20260917 | Make document navigation and decision selection usable live. | Implement real workplan/design document panes, switching, decision selection, and visual highlighting in the live TUI. |
 
-### Planned (3)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0039](tasks/AR-0039.md): Live proposal and batch interaction | Unclaimed | Make every decision and proposal interaction usable live. | Implement real proposal selection, helper updates, batch decisions, and user-authored proposal input. |
+
+### Planned (2)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0040](tasks/AR-0040.md): Terminal lifecycle cleanup | Unclaimed | Make live TUI startup and shutdown clean and reversible. | Restore terminal state on every exit path and leave only concise final output. |
 | P0 | [AR-0041](tasks/AR-0041.md): Live scenario demo parity | Unclaimed | Prove scenario demos exercise the same complete live UI. | Drive the real interactive TUI through representative scenarios and refresh demos/screenshots. |
 
