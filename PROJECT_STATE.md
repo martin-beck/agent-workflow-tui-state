@@ -2,15 +2,14 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `df173ad835abae9e30879466aef0d04ac9291206`
-- Local origin/main: `df173ad835abae9e30879466aef0d04ac9291206`
-- Primary worktree head: `a2270dd238c6edeae3f96d6ca86bba75d386dd06`
+- Product remote main: `02e8dbe9329586ecf2243558cb57fe04f4c7e651`
+- Local origin/main: `02e8dbe9329586ecf2243558cb57fe04f4c7e651`
+- Primary worktree head: `02e8dbe9329586ecf2243558cb57fe04f4c7e651`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #12 | `feature/ar-0011-cross-project-harness@a2270dd238c6` | `main` | CLEAN | - | test: add cross-project TUI contract trace |
 
 ## Recent workflows
 
