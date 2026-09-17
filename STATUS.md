@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**15 ARs tracked** across 3 active status categories.
+**15 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 10 |
+| **Done** | Accepted, integrated, and durably verified | 11 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -36,7 +36,7 @@ flowchart LR
         AR_0006["AR-0006 - Done"]:::status_done
         AR_0007["AR-0007 - Done"]:::status_done
         AR_0008["AR-0008 - Done"]:::status_done
-        AR_0009["AR-0009 - In progress"]:::status_in_progress
+        AR_0009["AR-0009 - Done"]:::status_done
         AR_0010["AR-0010 - Planned"]:::status_planned
         AR_0011["AR-0011 - Planned"]:::status_planned
         AR_0012["AR-0012 - Planned"]:::status_planned
@@ -101,12 +101,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0009](tasks/AR-0009.md): AWG decision adapter | codex-awt-ar0009-20260917 | Integrate TUI interaction with AWG decision semantics. | Consume AWG packet/decision/reconciliation contracts and emit provenance-preserving decision records. |
-
 ### Planned (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -116,7 +110,7 @@ flowchart LR
 | P1 | [AR-0012](tasks/AR-0012.md): End-to-end runtime verification | Unclaimed | Prove runtime behavior and AR input/output round trips. | Exercise the real terminal application with recorded input, end-to-end AR fixtures, and recovery scenarios. |
 | P1 | [AR-0013](tasks/AR-0013.md): Release and operational qualification | Unclaimed | Publish a reproducible, supported TUI release. | Harden packaging, platform support, accessibility, privacy, signed release, and installation documentation. |
 
-### Done (10)
+### Done (11)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -124,6 +118,7 @@ flowchart LR
 | P0 | [AR-0002](tasks/AR-0002.md): Interactive TUI shell | Unclaimed | Build the minimal interactive terminal shell. | Implement only the terminal shell lifecycle and bounded input loop. |
 | P0 | [AR-0003](tasks/AR-0003.md): TUI event adapter implementation | Unclaimed | Connect revision-bound envelopes to TUI session boundaries. | Implement adapter transport and predecessor validation on top of the strict envelope schemas. |
 | P0 | [AR-0008](tasks/AR-0008.md): Coordinator lifecycle adapter | Unclaimed | Integrate the TUI with Coordinator as AR lifecycle authority. | Bind accepted TUI events to Coordinator task revisions, lifecycle transitions, and durable event references. |
+| P0 | [AR-0009](tasks/AR-0009.md): AWG decision adapter | Unclaimed | Integrate TUI interaction with AWG decision semantics. | Consume AWG packet/decision/reconciliation contracts and emit provenance-preserving decision records. |
 | P0 | [AR-0014](tasks/AR-0014.md): Formal TUI lifecycle model | Unclaimed | Define the formal TUI lifecycle state machine. | Formalize the finite AR/TUI lifecycle and fail-closed transitions. |
 | P0 | [AR-0015](tasks/AR-0015.md): AR/TUI envelope contract | Unclaimed | Define revision-bound TUI input and output envelopes. | Define strict AR context and TUI event envelope schemas. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
