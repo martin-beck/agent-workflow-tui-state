@@ -2,9 +2,9 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `8010420ae8795caf321a07ae9d6d7ad58844e88c`
-- Local origin/main: `8010420ae8795caf321a07ae9d6d7ad58844e88c`
-- Primary worktree head: `8010420ae8795caf321a07ae9d6d7ad58844e88c`
+- Product remote main: `bfc503950bf5e5ecb4ede0feea6439ad4064ed25`
+- Local origin/main: `bfc503950bf5e5ecb4ede0feea6439ad4064ed25`
+- Primary worktree head: `f8dbc19add899064b3949808da9b722ed8010031`
 
 ## Open pull requests
 
@@ -15,15 +15,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35279028924 | `bfc503950bf5` | push | TUI scenarios | in_progress:- |
+| 35279024584 | `464874a08586` | pull_request | TUI scenarios | in_progress:- |
+| 35279019243 | `464874a08586` | push | TUI scenarios | in_progress:- |
+| 35278994700 | `f8dbc19add89` | push | TUI scenarios | completed:cancelled |
+| 35278859914 | `088b2997bddd` | push | TUI scenarios | completed:cancelled |
+| 35278843907 | `94bf8b3d4aea` | pull_request | TUI scenarios | in_progress:- |
+| 35278839613 | `94bf8b3d4aea` | push | TUI scenarios | in_progress:- |
+| 35278672723 | `e038d0e2740b` | pull_request | TUI scenarios | completed:cancelled |
+| 35278669829 | `e038d0e2740b` | push | TUI scenarios | completed:cancelled |
 | 35277599741 | `8010420ae879` | push | TUI scenarios | completed:success |
 | 35277299140 | `e3e7eeb2274f` | pull_request | TUI scenarios | completed:success |
 | 35277295268 | `e3e7eeb2274f` | push | TUI scenarios | completed:success |
-| 35276801844 | `c7f517654cfa` | push | TUI scenarios | completed:success |
-| 35276555072 | `61ac75a2aadc` | pull_request | TUI scenarios | completed:success |
-| 35276551646 | `61ac75a2aadc` | push | TUI scenarios | completed:success |
-| 35276286966 | `5f9f76a1131b` | push | TUI scenarios | completed:success |
-| 35276024110 | `11bda4217603` | pull_request | TUI scenarios | completed:success |
-| 35276021099 | `11bda4217603` | push | TUI scenarios | completed:success |
-| 35274053915 | `67d213231ecd` | push | TUI scenarios | completed:success |
-| 35274003199 | `603311f5b7ce` | pull_request | TUI scenarios | completed:success |
-| 35273998876 | `603311f5b7ce` | push | TUI scenarios | completed:success |
