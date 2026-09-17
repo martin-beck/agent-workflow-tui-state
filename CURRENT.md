@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0030](tasks/AR-0030.md): Scenario end-to-end runner and screenshots | Exercise the full TUI interaction surface from synthetic inputs. | Run every corpus scenario through the TUI controls and generate deterministic screenshots. | codex-awt-ar0030-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -49,3 +43,4 @@ Never edit this file directly.
 | P1 | [AR-0023](tasks/AR-0023.md): Reconciliation and conflict UI | Implement the live conflict-resolution view and reopen loop. | Render reconciliation diffs, contradiction impact, affected ARs, and targeted reopen/discussion-required actions. | - |
 | P1 | [AR-0024](tasks/AR-0024.md): Anti-rubber-stamp interaction UI | Make human choice informed, contestable, and authority-explicit. | Implement anti-rubber-stamp framing, authority context, evidence gaps, reject/clarify/more-evidence affordances, and explicit limitations. | - |
 | P1 | [AR-0029](tasks/AR-0029.md): Synthetic TUI scenario corpus | Define reproducible artificial TUI scenario inputs. | Create a schema-valid synthetic corpus covering diverse TUI interaction workflows. | - |
+| P1 | [AR-0030](tasks/AR-0030.md): Scenario end-to-end runner and screenshots | Exercise the full TUI interaction surface from synthetic inputs. | Run every corpus scenario through the TUI controls and generate deterministic screenshots. | - |
