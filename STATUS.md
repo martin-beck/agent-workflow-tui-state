@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -81,7 +81,7 @@ flowchart LR
         AR_0051["AR-0051 - Done"]:::status_done
         AR_0052["AR-0052 - Done"]:::status_done
         AR_0053["AR-0053 - Done"]:::status_done
-        AR_0054["AR-0054 - Open"]:::status_open
+        AR_0054["AR-0054 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -241,11 +241,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0054](tasks/AR-0054.md): AR structure graph document and highlight projection | Unclaimed | Prevent incorrect document context and highlight selection in live TUI sessions. | Derive Markdown documents and decision highlights from authoritative AR structure graph nodes. |
+| P1 | [AR-0054](tasks/AR-0054.md): AR structure graph document and highlight projection | codex-awt-ar0054-20260918 | Prevent incorrect document context and highlight selection in live TUI sessions. | Derive Markdown documents and decision highlights from authoritative AR structure graph nodes. |
 
 ### Done (53)
 

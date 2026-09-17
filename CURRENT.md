@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0054](tasks/AR-0054.md): AR structure graph document and highlight projection | Prevent incorrect document context and highlight selection in live TUI sessions. | Derive Markdown documents and decision highlights from authoritative AR structure graph nodes. | - |
+| P1 | [AR-0054](tasks/AR-0054.md): AR structure graph document and highlight projection | Prevent incorrect document context and highlight selection in live TUI sessions. | Derive Markdown documents and decision highlights from authoritative AR structure graph nodes. | codex-awt-ar0054-20260918 |
 
 ## Done
 
