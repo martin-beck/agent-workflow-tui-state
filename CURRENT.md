@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0051](tasks/AR-0051.md): Fixed pane geometry and responsive resize | Keep pane geometry stable while supporting terminal resizing. | Give TUI panes explicit bounded dimensions and verify complete full-screen layout behavior across terminal resize events. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |

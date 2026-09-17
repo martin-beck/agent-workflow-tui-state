@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**50 ARs tracked** across 1 active status categories.
+**51 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 50 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -78,6 +78,7 @@ flowchart LR
         AR_0048["AR-0048 - Done"]:::status_done
         AR_0049["AR-0049 - Done"]:::status_done
         AR_0050["AR-0050 - Done"]:::status_done
+        AR_0051["AR-0051 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -162,6 +163,7 @@ flowchart LR
     AR_0047 --> AR_0048
     AR_0048 --> AR_0049
     AR_0049 --> AR_0050
+    AR_0050 --> AR_0051
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -225,9 +227,16 @@ flowchart LR
 | [AR-0047](tasks/AR-0047.md) | [AR-0046](tasks/AR-0046.md) | [AR-0048](tasks/AR-0048.md) |
 | [AR-0048](tasks/AR-0048.md) | [AR-0047](tasks/AR-0047.md) | [AR-0049](tasks/AR-0049.md) |
 | [AR-0049](tasks/AR-0049.md) | [AR-0048](tasks/AR-0048.md) | [AR-0050](tasks/AR-0050.md) |
-| [AR-0050](tasks/AR-0050.md) | [AR-0049](tasks/AR-0049.md) | None |
+| [AR-0050](tasks/AR-0050.md) | [AR-0049](tasks/AR-0049.md) | [AR-0051](tasks/AR-0051.md) |
+| [AR-0051](tasks/AR-0051.md) | [AR-0050](tasks/AR-0050.md) | None |
 
 ## Complete AR inventory
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0051](tasks/AR-0051.md): Fixed pane geometry and responsive resize | Unclaimed | Keep pane geometry stable while supporting terminal resizing. | Give TUI panes explicit bounded dimensions and verify complete full-screen layout behavior across terminal resize events. |
 
 ### Done (50)
 
