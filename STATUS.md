@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -54,7 +54,7 @@ flowchart LR
         AR_0024["AR-0024 - Done"]:::status_done
         AR_0025["AR-0025 - Planned"]:::status_planned
         AR_0026["AR-0026 - Done"]:::status_done
-        AR_0027["AR-0027 - Open"]:::status_open
+        AR_0027["AR-0027 - In progress"]:::status_in_progress
         AR_0028["AR-0028 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -153,11 +153,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0027](tasks/AR-0027.md): Session transport envelopes | Unclaimed | Define live TUI transport identity and acknowledgements. | Implement revision-bound session envelopes, event acknowledgements, and adapter correlation. |
+| P0 | [AR-0027](tasks/AR-0027.md): Session transport envelopes | codex-awt-ar0027-20260917 | Define live TUI transport identity and acknowledgements. | Implement revision-bound session envelopes, event acknowledgements, and adapter correlation. |
 
 ### Planned (6)
 
