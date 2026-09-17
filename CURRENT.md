@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0020](tasks/AR-0020.md): Interactive decision controls | Connect terminal input to explicit per-point decision and reconciliation events. | Implement keyboard/user-input controls for select, reject, clarify, add proposal, safe exit, and reopen. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -12,7 +18,6 @@ Never edit this file directly.
 | P1 | [AR-0013](tasks/AR-0013.md): Release and operational qualification | Publish a reproducible, supported TUI release. | Harden packaging, platform support, accessibility, privacy, signed release, and installation documentation. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): Recorded terminal runtime tests | Verify normal terminal runtime behavior against public contracts. | Drive the real TUI through recorded terminal input for a complete discussion-to-event round trip. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): Recovery and reopen runtime tests | Verify runtime recovery and conflict-reopen behavior. | Exercise interrupted save, stale resume, unresolved conflict, targeted reopen, and re-ask runtime paths. | - |
-| P1 | [AR-0020](tasks/AR-0020.md): Interactive decision controls | Connect terminal input to explicit per-point decision and reconciliation events. | Implement keyboard/user-input controls for select, reject, clarify, add proposal, safe exit, and reopen. | - |
 | P1 | [AR-0021](tasks/AR-0021.md): Batched discussion UI | Implement batched discussion interaction in the terminal UI. | Render batched independent discussion points, coupling warnings, partial responses, and per-point status in the live TUI. | - |
 | P1 | [AR-0022](tasks/AR-0022.md): Journal and continuation UI | Implement visible persistence and continuation controls. | Expose journal history, safe exit, resume/re-ask, and future-request AR mapping in the live UI. | - |
 | P1 | [AR-0023](tasks/AR-0023.md): Reconciliation and conflict UI | Implement the live conflict-resolution view and reopen loop. | Render reconciliation diffs, contradiction impact, affected ARs, and targeted reopen/discussion-required actions. | - |
