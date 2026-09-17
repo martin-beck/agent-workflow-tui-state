@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**35 ARs tracked** across 3 active status categories.
+**35 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 1 |
+| **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 33 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -61,7 +61,7 @@ flowchart LR
         AR_0031["AR-0031 - Done"]:::status_done
         AR_0032["AR-0032 - Done"]:::status_done
         AR_0033["AR-0033 - Done"]:::status_done
-        AR_0034["AR-0034 - In progress"]:::status_in_progress
+        AR_0034["AR-0034 - Planned"]:::status_planned
         AR_0035["AR-0035 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -119,9 +119,10 @@ flowchart LR
     AR_0029 --> AR_0030
     AR_0030 --> AR_0031
     AR_0030 --> AR_0032
+    AR_0030 --> AR_0034
     AR_0030 --> AR_0035
     AR_0031 --> AR_0033
-    AR_0033 --> AR_0034
+    AR_0032 --> AR_0034
     AR_0033 --> AR_0035
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -166,25 +167,20 @@ flowchart LR
 | [AR-0027](tasks/AR-0027.md) | [AR-0008](tasks/AR-0008.md), [AR-0009](tasks/AR-0009.md), [AR-0010](tasks/AR-0010.md), [AR-0020](tasks/AR-0020.md) | [AR-0025](tasks/AR-0025.md), [AR-0028](tasks/AR-0028.md) |
 | [AR-0028](tasks/AR-0028.md) | [AR-0027](tasks/AR-0027.md) | [AR-0025](tasks/AR-0025.md) |
 | [AR-0029](tasks/AR-0029.md) | [AR-0013](tasks/AR-0013.md) | [AR-0030](tasks/AR-0030.md) |
-| [AR-0030](tasks/AR-0030.md) | [AR-0029](tasks/AR-0029.md) | [AR-0031](tasks/AR-0031.md), [AR-0032](tasks/AR-0032.md), [AR-0035](tasks/AR-0035.md) |
+| [AR-0030](tasks/AR-0030.md) | [AR-0029](tasks/AR-0029.md) | [AR-0031](tasks/AR-0031.md), [AR-0032](tasks/AR-0032.md), [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md) |
 | [AR-0031](tasks/AR-0031.md) | [AR-0030](tasks/AR-0030.md) | [AR-0033](tasks/AR-0033.md) |
-| [AR-0032](tasks/AR-0032.md) | [AR-0030](tasks/AR-0030.md) | None |
-| [AR-0033](tasks/AR-0033.md) | [AR-0031](tasks/AR-0031.md) | [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md) |
-| [AR-0034](tasks/AR-0034.md) | [AR-0033](tasks/AR-0033.md) | None |
+| [AR-0032](tasks/AR-0032.md) | [AR-0030](tasks/AR-0030.md) | [AR-0034](tasks/AR-0034.md) |
+| [AR-0033](tasks/AR-0033.md) | [AR-0031](tasks/AR-0031.md) | [AR-0035](tasks/AR-0035.md) |
+| [AR-0034](tasks/AR-0034.md) | [AR-0030](tasks/AR-0030.md), [AR-0032](tasks/AR-0032.md) | None |
 | [AR-0035](tasks/AR-0035.md) | [AR-0030](tasks/AR-0030.md), [AR-0033](tasks/AR-0033.md) | None |
 
 ## Complete AR inventory
 
-### In progress (1)
+### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0034](tasks/AR-0034.md): Rich synthetic scenario inputs | codex-awt-ar0034-20260917 | Strengthen scenario fixtures with complete decision-session use cases and syntax checks. | Add semantically distinct, strongly validated synthetic TUI scenario inputs. |
-
-### Planned (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
+| P1 | [AR-0034](tasks/AR-0034.md): Interactive scenario helper script | Unclaimed | Let users run and interact with any generated scenario locally. | Add a zero-argument interactive scenario helper that selects and runs a corpus workflow through the full-screen TUI. |
 | P1 | [AR-0035](tasks/AR-0035.md): Deterministic scenario artifact hardening | Unclaimed | Make scenario replay and generated screenshot artifacts fail closed and accessible. | Harden deterministic replay, freshness comparison, and accessible screenshot generation. |
 
 ### Done (33)
