@@ -204,7 +204,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0041](tasks/AR-0041.md): Live scenario demo parity | Unclaimed | Prove scenario demos exercise the same complete live UI. | Drive the real interactive TUI through representative scenarios and refresh demos/screenshots. |
+| P0 | [AR-0041](tasks/AR-0041.md): Live scenario demo parity | Unclaimed | Prove scenario demos exercise the complete live UI. | Drive representative corpus scenarios through demo packets with multiple decisions and verify clean interactive completion. |
 
 ### Done (40)
 
