@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**54 ARs tracked** across 2 active status categories.
+**54 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 53 |
+| **Done** | Accepted, integrated, and durably verified | 54 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -81,7 +81,7 @@ flowchart LR
         AR_0051["AR-0051 - Done"]:::status_done
         AR_0052["AR-0052 - Done"]:::status_done
         AR_0053["AR-0053 - Done"]:::status_done
-        AR_0054["AR-0054 - In progress"]:::status_in_progress
+        AR_0054["AR-0054 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -241,13 +241,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0054](tasks/AR-0054.md): AR structure graph document and highlight projection | codex-awt-ar0054-20260918 | Prevent incorrect document context and highlight selection in live TUI sessions. | Derive Markdown documents and decision highlights from authoritative AR structure graph nodes. |
-
-### Done (53)
+### Done (54)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -304,3 +298,4 @@ flowchart LR
 | P1 | [AR-0051](tasks/AR-0051.md): Fixed pane geometry and responsive resize | Unclaimed | Keep pane geometry stable while supporting terminal resizing. | Give TUI panes explicit bounded dimensions and verify complete full-screen layout behavior across terminal resize events. |
 | P1 | [AR-0052](tasks/AR-0052.md): Modal own-proposal editing and guarded exit | Unclaimed | Make own-proposal editing safe, navigable, and reviewable before commit. | Implement the four-field own-proposal form, explicit confirmation, visible progress/saved status, and guarded exit prompt. |
 | P1 | [AR-0053](tasks/AR-0053.md): Cross-project TUI request and response contract | Unclaimed | Ensure Guidance, TUI, Coordinator, and Quality share one revision-bound contract. | Wire canonical AWG decision requests and stable candidate identities into TUI inputs and outputs. |
+| P1 | [AR-0054](tasks/AR-0054.md): AR structure graph document and highlight projection | Unclaimed | Prevent incorrect document context and highlight selection in live TUI sessions. | Derive Markdown documents and decision highlights from authoritative AR structure graph nodes. |
