@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0034](tasks/AR-0034.md): Interactive scenario helper script | Let users run and interact with any generated scenario locally. | Add a zero-argument interactive scenario helper that selects and runs a corpus workflow through the full-screen TUI. | codex-awt-ar0034-20260917 |
 | P1 | [AR-0035](tasks/AR-0035.md): Deterministic scenario artifact hardening | Make scenario replay and generated screenshot artifacts fail closed and accessible. | Await PR #35 merge, then run the full product suite and freshness check through handoffctl. | codex-awt-ar0035-20260917 |
 | P1 | [AR-0036](tasks/AR-0036.md): Rich synthetic scenario inputs | Strengthen scenario fixtures with complete decision-session use cases and syntax checks. | Add semantically distinct, strongly validated synthetic TUI scenario inputs. | codex-awt-ar0036-20260917 |
 
@@ -48,3 +47,4 @@ Never edit this file directly.
 | P1 | [AR-0031](tasks/AR-0031.md): Scenario CI freshness gate | Continuously validate generated TUI workflows in CI. | Add CI jobs that regenerate scenarios/screenshots and fail on stale generated artifacts. | - |
 | P1 | [AR-0032](tasks/AR-0032.md): Generated scenario documentation | Publish accessible scenario workflows from generated artifacts. | Generate Markdown scenario/workflow documentation linking each input, action trace, and screenshot. | - |
 | P1 | [AR-0033](tasks/AR-0033.md): Control coverage freshness invariant | Require corpus extension when TUI functionality grows. | Fail scenario validation when a live control lacks corpus coverage. | - |
+| P1 | [AR-0034](tasks/AR-0034.md): Interactive scenario helper script | Let users run and interact with any generated scenario locally. | Add a zero-argument interactive scenario helper that selects and runs a corpus workflow through the full-screen TUI. | - |
