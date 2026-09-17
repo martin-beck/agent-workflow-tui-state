@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0046](tasks/AR-0046.md): Anchor-aware document scrolling | Keep selected decision text visible in the document pane. | Scroll the rendered Markdown document to the selected decision highlight and add PageUp/PageDown navigation. | codex-awt-ar0046-20260917 |
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0047](tasks/AR-0047.md): Visible revisable decision selections | Make accepted decision state explicit and revisable in the live TUI. | Render answered decisions with a checkmark and only the selected proposal while permitting replacement before exit. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |

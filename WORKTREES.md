@@ -4,7 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-tui` | `main` | `f3545f9a8795` | 0 | behind 0, ahead 0 |
+| `agent-workflow-tui` | `fix/ar-0046-anchor-scroll` | `d0d53ed87cde` | 0 | behind 0, ahead 3 |
 | `agent-workflow-tui-ar0035` | `feature/ar-0035-scenario-artifact-hardening` | `32dfc428d32c` | 0 | behind 20, ahead 0 |
 | `agent-workflow-tui-ar0040` | `feature/ar-0040-terminal-lifecycle-v2` | `be4e8de93fb9` | 0 | behind 13, ahead 0 |
 | `agent-workflow-tui-ar0038` | `DETACHED` | `93438838e8a3` | 0 | behind 16, ahead 0 |
