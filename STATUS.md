@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**32 ARs tracked** across 3 active status categories.
+**32 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 28 |
+| **Done** | Accepted, integrated, and durably verified | 29 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -56,7 +56,7 @@ flowchart LR
         AR_0026["AR-0026 - Done"]:::status_done
         AR_0027["AR-0027 - Done"]:::status_done
         AR_0028["AR-0028 - Done"]:::status_done
-        AR_0029["AR-0029 - In progress"]:::status_in_progress
+        AR_0029["AR-0029 - Done"]:::status_done
         AR_0030["AR-0030 - Planned"]:::status_planned
         AR_0031["AR-0031 - Planned"]:::status_planned
         AR_0032["AR-0032 - Planned"]:::status_planned
@@ -165,12 +165,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0029](tasks/AR-0029.md): Synthetic TUI scenario corpus | codex-awt-ar0029-20260917 | Define reproducible artificial TUI scenario inputs. | Create a schema-valid synthetic corpus covering diverse TUI interaction workflows. |
-
 ### Planned (3)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -179,7 +173,7 @@ flowchart LR
 | P1 | [AR-0031](tasks/AR-0031.md): Scenario CI freshness gate | Unclaimed | Continuously validate generated TUI workflows in CI. | Add CI jobs that regenerate scenarios/screenshots and fail on stale generated artifacts. |
 | P1 | [AR-0032](tasks/AR-0032.md): Generated scenario documentation | Unclaimed | Publish accessible scenario workflows from generated artifacts. | Generate Markdown scenario/workflow documentation linking each input, action trace, and screenshot. |
 
-### Done (28)
+### Done (29)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -211,3 +205,4 @@ flowchart LR
 | P1 | [AR-0022](tasks/AR-0022.md): Journal and continuation UI | Unclaimed | Implement visible persistence and continuation controls. | Expose journal history, safe exit, resume/re-ask, and future-request AR mapping in the live UI. |
 | P1 | [AR-0023](tasks/AR-0023.md): Reconciliation and conflict UI | Unclaimed | Implement the live conflict-resolution view and reopen loop. | Render reconciliation diffs, contradiction impact, affected ARs, and targeted reopen/discussion-required actions. |
 | P1 | [AR-0024](tasks/AR-0024.md): Anti-rubber-stamp interaction UI | Unclaimed | Make human choice informed, contestable, and authority-explicit. | Implement anti-rubber-stamp framing, authority context, evidence gaps, reject/clarify/more-evidence affordances, and explicit limitations. |
+| P1 | [AR-0029](tasks/AR-0029.md): Synthetic TUI scenario corpus | Unclaimed | Define reproducible artificial TUI scenario inputs. | Create a schema-valid synthetic corpus covering diverse TUI interaction workflows. |
