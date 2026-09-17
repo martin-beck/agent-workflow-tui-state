@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 42 |
+| **Done** | Accepted, integrated, and durably verified | 43 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -71,7 +71,7 @@ flowchart LR
         AR_0041["AR-0041 - Done"]:::status_done
         AR_0042["AR-0042 - Done"]:::status_done
         AR_0043["AR-0043 - In progress"]:::status_in_progress
-        AR_0044["AR-0044 - In progress"]:::status_in_progress
+        AR_0044["AR-0044 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -211,14 +211,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0043](tasks/AR-0043.md): Live scenario runner parity | codex-awt-ar0043-20260917 | Ensure scenario screenshots exercise the real multi-pane TUI model. | Instantiate the live application model for each scenario replay and include document/decision state in generated demos. |
-| P0 | [AR-0044](tasks/AR-0044.md): Markdown document rendering | codex-awt-ar0044-20260917 | Make document panes real Markdown terminal views. | Render Markdown design/workplan documents through a pinned terminal Markdown renderer in the live TUI and demos. |
 
-### Done (42)
+### Done (43)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -240,6 +239,7 @@ flowchart LR
 | P0 | [AR-0040](tasks/AR-0040.md): Terminal lifecycle cleanup | Unclaimed | Make live TUI startup and shutdown clean and reversible. | Restore terminal state on every exit path and leave only concise final output. |
 | P0 | [AR-0041](tasks/AR-0041.md): Live scenario demo parity | Unclaimed | Prove scenario demos exercise the complete live UI. | Drive representative corpus scenarios through demo packets with multiple decisions and verify clean interactive completion. |
 | P0 | [AR-0042](tasks/AR-0042.md): Default live demo and anchor highlighting | Unclaimed | Make the standalone TUI immediately demonstrate the complete interaction model. | Show a multi-decision workplan/design demo by default and visibly mark the active document anchor. |
+| P0 | [AR-0044](tasks/AR-0044.md): Markdown document rendering | Unclaimed | Make document panes real Markdown terminal views. | Render Markdown design/workplan documents through a pinned terminal Markdown renderer in the live TUI and demos. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
