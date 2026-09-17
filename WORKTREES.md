@@ -6,5 +6,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-workflow-tui` | `main` | `9677e8fb2409` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `docs/SCENARIOS.md` |
-| `agent-workflow-tui-ar0035` | `feature/ar-0035-scenario-artifact-hardening` | `82748b429713` | 0 | behind 10, ahead 1 |
+| `agent-workflow-tui-ar0035` | `DETACHED` | `9677e8fb2409` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `tests/test_scenario_runner.py`, `tools/run_scenarios.py` |
 | `awtui-ar34.e9He2e` | `DETACHED` | `7928cc5eca0d` | 0 | behind 8, ahead 0 |
