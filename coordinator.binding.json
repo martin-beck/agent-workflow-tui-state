@@ -1,6 +1,6 @@
 {
-  "product_repository": "martin-beck/agent-workflow-tui",
+  "product_repository": "martin-beck/agent-workflow-ui",
   "project_id": "de02a2e3-4f6f-4b83-b3d2-21f93064a662",
   "schema_version": 1,
-  "state_repository": "martin-beck/agent-workflow-tui-state"
+  "state_repository": "martin-beck/agent-workflow-ui-state"
 }
