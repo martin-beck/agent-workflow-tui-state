@@ -5,7 +5,7 @@
 
 ## Portfolio overview
 
-**54 ARs tracked** across 1 active status categories.
+**63 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
@@ -14,7 +14,7 @@
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 54 |
+| **Done** | Accepted, integrated, and durably verified | 63 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -82,6 +82,15 @@ flowchart LR
         AR_0052["AR-0052 - Done"]:::status_done
         AR_0053["AR-0053 - Done"]:::status_done
         AR_0054["AR-0054 - Done"]:::status_done
+        AR_0055["AR-0055 - Done"]:::status_done
+        AR_0056["AR-0056 - Done"]:::status_done
+        AR_0057["AR-0057 - Done"]:::status_done
+        AR_0058["AR-0058 - Done"]:::status_done
+        AR_0059["AR-0059 - Done"]:::status_done
+        AR_0060["AR-0060 - Done"]:::status_done
+        AR_0061["AR-0061 - Done"]:::status_done
+        AR_0062["AR-0062 - Done"]:::status_done
+        AR_0063["AR-0063 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -170,6 +179,22 @@ flowchart LR
     AR_0051 --> AR_0052
     AR_0052 --> AR_0053
     AR_0053 --> AR_0054
+    AR_0053 --> AR_0056
+    AR_0054 --> AR_0055
+    AR_0054 --> AR_0060
+    AR_0055 --> AR_0057
+    AR_0055 --> AR_0058
+    AR_0056 --> AR_0057
+    AR_0056 --> AR_0059
+    AR_0057 --> AR_0061
+    AR_0058 --> AR_0057
+    AR_0058 --> AR_0059
+    AR_0058 --> AR_0060
+    AR_0059 --> AR_0061
+    AR_0059 --> AR_0063
+    AR_0060 --> AR_0061
+    AR_0060 --> AR_0062
+    AR_0062 --> AR_0063
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -236,12 +261,21 @@ flowchart LR
 | [AR-0050](tasks/AR-0050.md) | [AR-0049](tasks/AR-0049.md) | [AR-0051](tasks/AR-0051.md) |
 | [AR-0051](tasks/AR-0051.md) | [AR-0050](tasks/AR-0050.md) | [AR-0052](tasks/AR-0052.md) |
 | [AR-0052](tasks/AR-0052.md) | [AR-0051](tasks/AR-0051.md) | [AR-0053](tasks/AR-0053.md) |
-| [AR-0053](tasks/AR-0053.md) | [AR-0052](tasks/AR-0052.md) | [AR-0054](tasks/AR-0054.md) |
-| [AR-0054](tasks/AR-0054.md) | [AR-0053](tasks/AR-0053.md) | None |
+| [AR-0053](tasks/AR-0053.md) | [AR-0052](tasks/AR-0052.md) | [AR-0054](tasks/AR-0054.md), [AR-0056](tasks/AR-0056.md) |
+| [AR-0054](tasks/AR-0054.md) | [AR-0053](tasks/AR-0053.md) | [AR-0055](tasks/AR-0055.md), [AR-0060](tasks/AR-0060.md) |
+| [AR-0055](tasks/AR-0055.md) | [AR-0054](tasks/AR-0054.md) | [AR-0057](tasks/AR-0057.md), [AR-0058](tasks/AR-0058.md) |
+| [AR-0056](tasks/AR-0056.md) | [AR-0053](tasks/AR-0053.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md) |
+| [AR-0057](tasks/AR-0057.md) | [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md) |
+| [AR-0058](tasks/AR-0058.md) | [AR-0055](tasks/AR-0055.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0060](tasks/AR-0060.md) |
+| [AR-0059](tasks/AR-0059.md) | [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md) |
+| [AR-0060](tasks/AR-0060.md) | [AR-0054](tasks/AR-0054.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md), [AR-0062](tasks/AR-0062.md) |
+| [AR-0061](tasks/AR-0061.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0060](tasks/AR-0060.md) | None |
+| [AR-0062](tasks/AR-0062.md) | [AR-0060](tasks/AR-0060.md) | [AR-0063](tasks/AR-0063.md) |
+| [AR-0063](tasks/AR-0063.md) | [AR-0059](tasks/AR-0059.md), [AR-0062](tasks/AR-0062.md) | None |
 
 ## Complete AR inventory
 
-### Done (54)
+### Done (63)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -299,3 +333,12 @@ flowchart LR
 | P1 | [AR-0052](tasks/AR-0052.md): Modal own-proposal editing and guarded exit | Unclaimed | Make own-proposal editing safe, navigable, and reviewable before commit. | Implement the four-field own-proposal form, explicit confirmation, visible progress/saved status, and guarded exit prompt. |
 | P1 | [AR-0053](tasks/AR-0053.md): Cross-project TUI request and response contract | Unclaimed | Ensure Guidance, TUI, Coordinator, and Quality share one revision-bound contract. | Wire canonical AWG decision requests and stable candidate identities into TUI inputs and outputs. |
 | P1 | [AR-0054](tasks/AR-0054.md): AR structure graph document and highlight projection | Unclaimed | Prevent incorrect document context and highlight selection in live TUI sessions. | Derive Markdown documents and decision highlights from authoritative AR structure graph nodes. |
+| P1 | [AR-0055](tasks/AR-0055.md): Windows TUI runtime parity | Unclaimed | Make the live human-in-the-loop TUI usable with supported Windows terminal hosts. | No further action; verify on the next compatibility refresh. |
+| P1 | [AR-0056](tasks/AR-0056.md): Remote TUI session transport | Unclaimed | Support remote TUI attachment without weakening Coordinator session and response binding. | No further action; verify transport compatibility on the next bridge refresh. |
+| P1 | [AR-0057](tasks/AR-0057.md): Cross-platform TUI CI and compatibility | Unclaimed | Continuously verify synchronized TUI, Coordinator, Guidance, Quality, and transport compatibility. | No further action; compatibility lock is updated by umbrella release PR #23. |
+| P1 | [AR-0058](tasks/AR-0058.md): Windows GUI and PySide6 parity | Unclaimed | Provide a supported Windows GUI surface with the same human-in-the-loop decision semantics and packaging guarantees as the TUI. | No further action; verify the optional PySide6 extra on the next Windows GUI refresh. |
+| P1 | [AR-0059](tasks/AR-0059.md): Windows PowerShell SSH capability contract | Unclaimed | Make Windows PowerShell SSH invocation and remote-agent capabilities explicit, bounded, and revision-safe. | No further action; validate against the next host-adapter refresh. |
+| P1 | [AR-0060](tasks/AR-0060.md): GUI screenshot scenarios and documentation | Unclaimed | Document Windows GUI and terminal workflows with reproducible, privacy-safe visual artifacts. | No further action; verify screenshot artifacts on the next scenario refresh. |
+| P1 | [AR-0061](tasks/AR-0061.md): Cross-platform remote-agent round trips | Unclaimed | Verify the complete cross-platform human-in-the-loop path from local UI through SSH to a remote agent and back. | No further action; use a real project host only for optional external qualification. |
+| P1 | [AR-0062](tasks/AR-0062.md): Align UI package metadata with the release lock | Unclaimed | Keep installed UI package metadata aligned with the immutable release selected by Agent Workflow. | No further action; verify the immutable v0.4.3 pin on the next compatibility refresh. |
+| P1 | [AR-0063](tasks/AR-0063.md): Negotiate remote GUI and TUI capability | Unclaimed | Select the graphical or terminal client explicitly for remote SSH handoffs. | No further action; verify capability negotiation at the next cross-project refresh. |
