@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**70 ARs tracked** across 2 active status categories.
+**70 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 69 |
+| **Done** | Accepted, integrated, and durably verified | 70 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -97,7 +97,7 @@ flowchart LR
         AR_0067["AR-0067 - Done"]:::status_done
         AR_0068["AR-0068 - Done"]:::status_done
         AR_0069["AR-0069 - Done"]:::status_done
-        AR_0070["AR-0070 - Open"]:::status_open
+        AR_0070["AR-0070 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -307,13 +307,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0070](tasks/AR-0070.md): Canonical live event envelope | Unclaimed | Make every live UI event schema-valid and consumable by the Coordinator bridge. | Implement canonical nested payload envelope and validate it in CI. |
-
-### Done (69)
+### Done (70)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -342,6 +336,7 @@ flowchart LR
 | P0 | [AR-0048](tasks/AR-0048.md): Live scenario replay and asciinema documentation | Unclaimed | Make scenario demonstrations real TUI sessions with terminal recordings. | Replay corpus actions through the real prompt-toolkit application and generate human-speed asciinema recordings and documentation links. |
 | P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | Unclaimed | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. |
 | P0 | [AR-0067](tasks/AR-0067.md): GUI batch journal and guarded lifecycle | Unclaimed | Ensure GUI sessions return every revision-bound decision event and cannot silently lose or discard work. | Verify GUI journal semantics during the next UI refresh. |
+| P0 | [AR-0070](tasks/AR-0070.md): Canonical live event envelope | Unclaimed | Make every live UI event schema-valid and consumable by the Coordinator bridge. | Verify future protocol extensions against the versioned bridge contract. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
