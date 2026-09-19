@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**69 ARs tracked** across 2 active status categories.
+**69 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 66 |
+| **Done** | Accepted, integrated, and durably verified | 69 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -94,9 +94,9 @@ flowchart LR
         AR_0064["AR-0064 - Done"]:::status_done
         AR_0065["AR-0065 - Done"]:::status_done
         AR_0066["AR-0066 - Done"]:::status_done
-        AR_0067["AR-0067 - Open"]:::status_open
-        AR_0068["AR-0068 - Open"]:::status_open
-        AR_0069["AR-0069 - Open"]:::status_open
+        AR_0067["AR-0067 - Done"]:::status_done
+        AR_0068["AR-0068 - Done"]:::status_done
+        AR_0069["AR-0069 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -302,15 +302,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (3)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0067](tasks/AR-0067.md): GUI batch journal and guarded lifecycle | Unclaimed | Ensure GUI sessions return every revision-bound decision event and cannot silently lose or discard work. | Implement and qualify complete GUI batch event journaling, evidence requests, and guarded close behavior. |
-| P0 | [AR-0069](tasks/AR-0069.md): Remote GUI/TUI invocation matrix | Unclaimed | Exercise complete request/UI/result flows across remote Linux, Windows-compatible, and architecture-matrix environments. | Add end-to-end CI coverage for GUI/TUI connector invocations across remote host classes. |
-| P1 | [AR-0068](tasks/AR-0068.md): Portable runtime bootstrap and environment negotiation | Unclaimed | Make the one-command handoff able to provision a temporary compatible UI runtime on the controlling machine. | Add platform/architecture runtime bootstrap validation and portable runtime packaging evidence. |
-
-### Done (66)
+### Done (69)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -338,6 +330,7 @@ flowchart LR
 | P0 | [AR-0047](tasks/AR-0047.md): Visible revisable decision selections | Unclaimed | Make accepted decision state explicit and revisable in the live TUI. | Render answered decisions with a checkmark and only the selected proposal while permitting replacement before exit. |
 | P0 | [AR-0048](tasks/AR-0048.md): Live scenario replay and asciinema documentation | Unclaimed | Make scenario demonstrations real TUI sessions with terminal recordings. | Replay corpus actions through the real prompt-toolkit application and generate human-speed asciinema recordings and documentation links. |
 | P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | Unclaimed | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. |
+| P0 | [AR-0067](tasks/AR-0067.md): GUI batch journal and guarded lifecycle | Unclaimed | Ensure GUI sessions return every revision-bound decision event and cannot silently lose or discard work. | Verify GUI journal semantics during the next UI refresh. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
@@ -380,3 +373,5 @@ flowchart LR
 | P1 | [AR-0064](tasks/AR-0064.md): Professional GUI visual system and interaction help | Unclaimed | Make the desktop decision UI professional, self-explanatory, and comfortable for sustained human review. | Verify the visual system during the next GUI release refresh. |
 | P1 | [AR-0065](tasks/AR-0065.md): Single-command cross-platform UI handoff | Unclaimed | Provide one short command that selects GUI/TUI, transfers the request over SSH, and returns the event journal. | Verify the connector against the next cross-project transport refresh. |
 | P1 | [AR-0066](tasks/AR-0066.md): GUI UX and handoff documentation | Unclaimed | Document the professional GUI interaction model and the one-command local/remote workflow. | Verify documentation links during the next UI release refresh. |
+| P1 | [AR-0068](tasks/AR-0068.md): Portable runtime bootstrap and environment negotiation | Unclaimed | Make the one-command handoff able to provision a temporary compatible UI runtime on the controlling machine. | Verify trusted native ARM archives when available. |
+| P1 | [AR-0069](tasks/AR-0069.md): Remote GUI/TUI invocation matrix | Unclaimed | Exercise complete request/UI/result flows across remote Linux, Windows-compatible, and architecture-matrix environments. | Extend to trusted native ARM runners when available. |

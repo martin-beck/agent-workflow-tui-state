@@ -3,14 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0067](tasks/AR-0067.md): GUI batch journal and guarded lifecycle | Ensure GUI sessions return every revision-bound decision event and cannot silently lose or discard work. | Implement and qualify complete GUI batch event journaling, evidence requests, and guarded close behavior. | - |
-| P0 | [AR-0069](tasks/AR-0069.md): Remote GUI/TUI invocation matrix | Exercise complete request/UI/result flows across remote Linux, Windows-compatible, and architecture-matrix environments. | Add end-to-end CI coverage for GUI/TUI connector invocations across remote host classes. | - |
-| P1 | [AR-0068](tasks/AR-0068.md): Portable runtime bootstrap and environment negotiation | Make the one-command handoff able to provision a temporary compatible UI runtime on the controlling machine. | Add platform/architecture runtime bootstrap validation and portable runtime packaging evidence. | - |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -39,6 +31,7 @@ Never edit this file directly.
 | P0 | [AR-0047](tasks/AR-0047.md): Visible revisable decision selections | Make accepted decision state explicit and revisable in the live TUI. | Render answered decisions with a checkmark and only the selected proposal while permitting replacement before exit. | - |
 | P0 | [AR-0048](tasks/AR-0048.md): Live scenario replay and asciinema documentation | Make scenario demonstrations real TUI sessions with terminal recordings. | Replay corpus actions through the real prompt-toolkit application and generate human-speed asciinema recordings and documentation links. | - |
 | P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. | - |
+| P0 | [AR-0067](tasks/AR-0067.md): GUI batch journal and guarded lifecycle | Ensure GUI sessions return every revision-bound decision event and cannot silently lose or discard work. | Verify GUI journal semantics during the next UI refresh. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
@@ -81,3 +74,5 @@ Never edit this file directly.
 | P1 | [AR-0064](tasks/AR-0064.md): Professional GUI visual system and interaction help | Make the desktop decision UI professional, self-explanatory, and comfortable for sustained human review. | Verify the visual system during the next GUI release refresh. | - |
 | P1 | [AR-0065](tasks/AR-0065.md): Single-command cross-platform UI handoff | Provide one short command that selects GUI/TUI, transfers the request over SSH, and returns the event journal. | Verify the connector against the next cross-project transport refresh. | - |
 | P1 | [AR-0066](tasks/AR-0066.md): GUI UX and handoff documentation | Document the professional GUI interaction model and the one-command local/remote workflow. | Verify documentation links during the next UI release refresh. | - |
+| P1 | [AR-0068](tasks/AR-0068.md): Portable runtime bootstrap and environment negotiation | Make the one-command handoff able to provision a temporary compatible UI runtime on the controlling machine. | Verify trusted native ARM archives when available. | - |
+| P1 | [AR-0069](tasks/AR-0069.md): Remote GUI/TUI invocation matrix | Exercise complete request/UI/result flows across remote Linux, Windows-compatible, and architecture-matrix environments. | Extend to trusted native ARM runners when available. | - |
