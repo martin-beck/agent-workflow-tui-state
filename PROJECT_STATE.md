@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35460041722 | `2c505520a18b` | push | TUI Windows compatibility | completed:success |
 | 35460041662 | `2c505520a18b` | push | TUI scenarios | in_progress:- |
-| 35460027570 | `2c505520a18b` | push | TUI scenarios | in_progress:- |
+| 35460027570 | `2c505520a18b` | push | TUI scenarios | completed:success |
 | 35460027523 | `2c505520a18b` | push | TUI Windows compatibility | completed:success |
 | 35459789512 | `e4b0e954e6d9` | pull_request | TUI scenarios | completed:success |
 | 35459789502 | `e4b0e954e6d9` | pull_request | TUI Windows compatibility | completed:success |
