@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**66 ARs tracked** across 1 active status categories.
+**69 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -94,6 +94,9 @@ flowchart LR
         AR_0064["AR-0064 - Done"]:::status_done
         AR_0065["AR-0065 - Done"]:::status_done
         AR_0066["AR-0066 - Done"]:::status_done
+        AR_0067["AR-0067 - Open"]:::status_open
+        AR_0068["AR-0068 - Open"]:::status_open
+        AR_0069["AR-0069 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -187,15 +190,19 @@ flowchart LR
     AR_0054 --> AR_0060
     AR_0055 --> AR_0057
     AR_0055 --> AR_0058
+    AR_0055 --> AR_0068
     AR_0056 --> AR_0057
     AR_0056 --> AR_0059
+    AR_0056 --> AR_0068
     AR_0057 --> AR_0061
     AR_0058 --> AR_0057
     AR_0058 --> AR_0059
     AR_0058 --> AR_0060
+    AR_0058 --> AR_0068
     AR_0059 --> AR_0061
     AR_0059 --> AR_0063
     AR_0059 --> AR_0065
+    AR_0059 --> AR_0068
     AR_0060 --> AR_0061
     AR_0060 --> AR_0062
     AR_0061 --> AR_0065
@@ -203,7 +210,12 @@ flowchart LR
     AR_0063 --> AR_0064
     AR_0063 --> AR_0065
     AR_0064 --> AR_0066
+    AR_0064 --> AR_0067
     AR_0065 --> AR_0066
+    AR_0065 --> AR_0067
+    AR_0065 --> AR_0068
+    AR_0067 --> AR_0069
+    AR_0068 --> AR_0069
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -272,20 +284,31 @@ flowchart LR
 | [AR-0052](tasks/AR-0052.md) | [AR-0051](tasks/AR-0051.md) | [AR-0053](tasks/AR-0053.md) |
 | [AR-0053](tasks/AR-0053.md) | [AR-0052](tasks/AR-0052.md) | [AR-0054](tasks/AR-0054.md), [AR-0056](tasks/AR-0056.md) |
 | [AR-0054](tasks/AR-0054.md) | [AR-0053](tasks/AR-0053.md) | [AR-0055](tasks/AR-0055.md), [AR-0060](tasks/AR-0060.md) |
-| [AR-0055](tasks/AR-0055.md) | [AR-0054](tasks/AR-0054.md) | [AR-0057](tasks/AR-0057.md), [AR-0058](tasks/AR-0058.md) |
-| [AR-0056](tasks/AR-0056.md) | [AR-0053](tasks/AR-0053.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md) |
+| [AR-0055](tasks/AR-0055.md) | [AR-0054](tasks/AR-0054.md) | [AR-0057](tasks/AR-0057.md), [AR-0058](tasks/AR-0058.md), [AR-0068](tasks/AR-0068.md) |
+| [AR-0056](tasks/AR-0056.md) | [AR-0053](tasks/AR-0053.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0068](tasks/AR-0068.md) |
 | [AR-0057](tasks/AR-0057.md) | [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md) |
-| [AR-0058](tasks/AR-0058.md) | [AR-0055](tasks/AR-0055.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0060](tasks/AR-0060.md) |
-| [AR-0059](tasks/AR-0059.md) | [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md), [AR-0065](tasks/AR-0065.md) |
+| [AR-0058](tasks/AR-0058.md) | [AR-0055](tasks/AR-0055.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0060](tasks/AR-0060.md), [AR-0068](tasks/AR-0068.md) |
+| [AR-0059](tasks/AR-0059.md) | [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md), [AR-0065](tasks/AR-0065.md), [AR-0068](tasks/AR-0068.md) |
 | [AR-0060](tasks/AR-0060.md) | [AR-0054](tasks/AR-0054.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md), [AR-0062](tasks/AR-0062.md) |
 | [AR-0061](tasks/AR-0061.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0060](tasks/AR-0060.md) | [AR-0065](tasks/AR-0065.md) |
 | [AR-0062](tasks/AR-0062.md) | [AR-0060](tasks/AR-0060.md) | [AR-0063](tasks/AR-0063.md) |
 | [AR-0063](tasks/AR-0063.md) | [AR-0059](tasks/AR-0059.md), [AR-0062](tasks/AR-0062.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) |
-| [AR-0064](tasks/AR-0064.md) | [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md) |
-| [AR-0065](tasks/AR-0065.md) | [AR-0059](tasks/AR-0059.md), [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md) |
+| [AR-0064](tasks/AR-0064.md) | [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md), [AR-0067](tasks/AR-0067.md) |
+| [AR-0065](tasks/AR-0065.md) | [AR-0059](tasks/AR-0059.md), [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md), [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md) |
 | [AR-0066](tasks/AR-0066.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) | None |
+| [AR-0067](tasks/AR-0067.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) | [AR-0069](tasks/AR-0069.md) |
+| [AR-0068](tasks/AR-0068.md) | [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md), [AR-0059](tasks/AR-0059.md), [AR-0065](tasks/AR-0065.md) | [AR-0069](tasks/AR-0069.md) |
+| [AR-0069](tasks/AR-0069.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md) | None |
 
 ## Complete AR inventory
+
+### Open (3)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0067](tasks/AR-0067.md): GUI batch journal and guarded lifecycle | Unclaimed | Ensure GUI sessions return every revision-bound decision event and cannot silently lose or discard work. | Implement and qualify complete GUI batch event journaling, evidence requests, and guarded close behavior. |
+| P0 | [AR-0069](tasks/AR-0069.md): Remote GUI/TUI invocation matrix | Unclaimed | Exercise complete request/UI/result flows across remote Linux, Windows-compatible, and architecture-matrix environments. | Add end-to-end CI coverage for GUI/TUI connector invocations across remote host classes. |
+| P1 | [AR-0068](tasks/AR-0068.md): Portable runtime bootstrap and environment negotiation | Unclaimed | Make the one-command handoff able to provision a temporary compatible UI runtime on the controlling machine. | Add platform/architecture runtime bootstrap validation and portable runtime packaging evidence. |
 
 ### Done (66)
 

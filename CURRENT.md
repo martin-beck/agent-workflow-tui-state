@@ -3,6 +3,14 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0067](tasks/AR-0067.md): GUI batch journal and guarded lifecycle | Ensure GUI sessions return every revision-bound decision event and cannot silently lose or discard work. | Implement and qualify complete GUI batch event journaling, evidence requests, and guarded close behavior. | - |
+| P0 | [AR-0069](tasks/AR-0069.md): Remote GUI/TUI invocation matrix | Exercise complete request/UI/result flows across remote Linux, Windows-compatible, and architecture-matrix environments. | Add end-to-end CI coverage for GUI/TUI connector invocations across remote host classes. | - |
+| P1 | [AR-0068](tasks/AR-0068.md): Portable runtime bootstrap and environment negotiation | Make the one-command handoff able to provision a temporary compatible UI runtime on the controlling machine. | Add platform/architecture runtime bootstrap validation and portable runtime packaging evidence. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
