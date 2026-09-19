@@ -2,9 +2,9 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `468aa0788470bc34b17b6cb1f853bc041feb74cc`
-- Local origin/main: `468aa0788470bc34b17b6cb1f853bc041feb74cc`
-- Primary worktree head: `3c92e8c460f7507b176142e6984097a8c173ad03`
+- Product remote main: `f90d5a801384b23779457341cfa7c9a855061095`
+- Local origin/main: `f90d5a801384b23779457341cfa7c9a855061095`
+- Primary worktree head: `b9eeb97239fee3da00c7807da3f51750d4a736fa`
 
 ## Open pull requests
 
@@ -15,15 +15,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35431544383 | `468aa0788470` | push | TUI Windows compatibility | in_progress:- |
-| 35431544359 | `468aa0788470` | push | TUI scenarios | in_progress:- |
+| 35431785498 | `f90d5a801384` | push | TUI scenarios | in_progress:- |
+| 35431785457 | `f90d5a801384` | push | TUI Windows compatibility | completed:success |
+| 35431780538 | `f90d5a801384` | push | TUI Windows compatibility | in_progress:- |
+| 35431780491 | `f90d5a801384` | push | TUI scenarios | in_progress:- |
+| 35431597946 | `b9eeb97239fe` | pull_request | TUI scenarios | completed:success |
+| 35431597937 | `b9eeb97239fe` | pull_request | TUI Windows compatibility | completed:success |
+| 35431592907 | `b9eeb97239fe` | push | TUI scenarios | completed:success |
+| 35431592831 | `b9eeb97239fe` | push | TUI Windows compatibility | completed:success |
+| 35431544383 | `468aa0788470` | push | TUI Windows compatibility | completed:success |
+| 35431544359 | `468aa0788470` | push | TUI scenarios | completed:success |
 | 35431356313 | `3c92e8c460f7` | pull_request | TUI scenarios | completed:success |
 | 35431356215 | `3c92e8c460f7` | pull_request | TUI Windows compatibility | completed:success |
-| 35431349951 | `3c92e8c460f7` | push | TUI Windows compatibility | completed:success |
-| 35431349891 | `3c92e8c460f7` | push | TUI scenarios | completed:success |
-| 35430421152 | `db1eed1f166f` | push | TUI Windows compatibility | completed:success |
-| 35430421151 | `db1eed1f166f` | push | TUI scenarios | completed:success |
-| 35430418572 | `e6190ce903b8` | pull_request | TUI Windows compatibility | completed:success |
-| 35430418560 | `e6190ce903b8` | pull_request | TUI scenarios | completed:success |
-| 35430416302 | `e6190ce903b8` | push | TUI scenarios | completed:success |
-| 35430416245 | `e6190ce903b8` | push | TUI Windows compatibility | completed:success |
