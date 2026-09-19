@@ -2,9 +2,9 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `aea90809331fc65d0a4f93d532b8f0a527704c2e`
-- Local origin/main: `aea90809331fc65d0a4f93d532b8f0a527704c2e`
-- Primary worktree head: `094de9771293547120270b76aa5d92871eb8f298`
+- Product remote main: `468aa0788470bc34b17b6cb1f853bc041feb74cc`
+- Local origin/main: `468aa0788470bc34b17b6cb1f853bc041feb74cc`
+- Primary worktree head: `3c92e8c460f7507b176142e6984097a8c173ad03`
 
 ## Open pull requests
 
@@ -15,15 +15,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35403068079 | `aea90809331f` | push | TUI Windows compatibility | completed:success |
-| 35403068061 | `aea90809331f` | push | TUI scenarios | completed:success |
-| 35403057577 | `aea90809331f` | push | TUI Windows compatibility | completed:success |
-| 35403057565 | `aea90809331f` | push | TUI scenarios | completed:success |
-| 35402717035 | `094de9771293` | pull_request | TUI Windows compatibility | completed:success |
-| 35402716978 | `094de9771293` | pull_request | TUI scenarios | completed:success |
-| 35402708626 | `094de9771293` | push | TUI scenarios | completed:success |
-| 35402708623 | `094de9771293` | push | TUI Windows compatibility | completed:success |
-| 35402081600 | `af7645984b2e` | push | TUI scenarios | completed:success |
-| 35402081485 | `af7645984b2e` | push | TUI Windows compatibility | completed:success |
-| 35402066848 | `af7645984b2e` | push | TUI scenarios | completed:success |
-| 35402066842 | `af7645984b2e` | push | TUI Windows compatibility | completed:success |
+| 35431544383 | `468aa0788470` | push | TUI Windows compatibility | in_progress:- |
+| 35431544359 | `468aa0788470` | push | TUI scenarios | in_progress:- |
+| 35431356313 | `3c92e8c460f7` | pull_request | TUI scenarios | completed:success |
+| 35431356215 | `3c92e8c460f7` | pull_request | TUI Windows compatibility | completed:success |
+| 35431349951 | `3c92e8c460f7` | push | TUI Windows compatibility | completed:success |
+| 35431349891 | `3c92e8c460f7` | push | TUI scenarios | completed:success |
+| 35430421152 | `db1eed1f166f` | push | TUI Windows compatibility | completed:success |
+| 35430421151 | `db1eed1f166f` | push | TUI scenarios | completed:success |
+| 35430418572 | `e6190ce903b8` | pull_request | TUI Windows compatibility | completed:success |
+| 35430418560 | `e6190ce903b8` | pull_request | TUI scenarios | completed:success |
+| 35430416302 | `e6190ce903b8` | push | TUI scenarios | completed:success |
+| 35430416245 | `e6190ce903b8` | push | TUI Windows compatibility | completed:success |

@@ -5,7 +5,7 @@
 
 ## Portfolio overview
 
-**63 ARs tracked** across 1 active status categories.
+**66 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
@@ -14,7 +14,7 @@
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 63 |
+| **Done** | Accepted, integrated, and durably verified | 66 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -91,6 +91,9 @@ flowchart LR
         AR_0061["AR-0061 - Done"]:::status_done
         AR_0062["AR-0062 - Done"]:::status_done
         AR_0063["AR-0063 - Done"]:::status_done
+        AR_0064["AR-0064 - Done"]:::status_done
+        AR_0065["AR-0065 - Done"]:::status_done
+        AR_0066["AR-0066 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -192,9 +195,15 @@ flowchart LR
     AR_0058 --> AR_0060
     AR_0059 --> AR_0061
     AR_0059 --> AR_0063
+    AR_0059 --> AR_0065
     AR_0060 --> AR_0061
     AR_0060 --> AR_0062
+    AR_0061 --> AR_0065
     AR_0062 --> AR_0063
+    AR_0063 --> AR_0064
+    AR_0063 --> AR_0065
+    AR_0064 --> AR_0066
+    AR_0065 --> AR_0066
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -267,15 +276,18 @@ flowchart LR
 | [AR-0056](tasks/AR-0056.md) | [AR-0053](tasks/AR-0053.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md) |
 | [AR-0057](tasks/AR-0057.md) | [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md) |
 | [AR-0058](tasks/AR-0058.md) | [AR-0055](tasks/AR-0055.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0060](tasks/AR-0060.md) |
-| [AR-0059](tasks/AR-0059.md) | [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md) |
+| [AR-0059](tasks/AR-0059.md) | [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md), [AR-0065](tasks/AR-0065.md) |
 | [AR-0060](tasks/AR-0060.md) | [AR-0054](tasks/AR-0054.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md), [AR-0062](tasks/AR-0062.md) |
-| [AR-0061](tasks/AR-0061.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0060](tasks/AR-0060.md) | None |
+| [AR-0061](tasks/AR-0061.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0060](tasks/AR-0060.md) | [AR-0065](tasks/AR-0065.md) |
 | [AR-0062](tasks/AR-0062.md) | [AR-0060](tasks/AR-0060.md) | [AR-0063](tasks/AR-0063.md) |
-| [AR-0063](tasks/AR-0063.md) | [AR-0059](tasks/AR-0059.md), [AR-0062](tasks/AR-0062.md) | None |
+| [AR-0063](tasks/AR-0063.md) | [AR-0059](tasks/AR-0059.md), [AR-0062](tasks/AR-0062.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) |
+| [AR-0064](tasks/AR-0064.md) | [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md) |
+| [AR-0065](tasks/AR-0065.md) | [AR-0059](tasks/AR-0059.md), [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md) |
+| [AR-0066](tasks/AR-0066.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) | None |
 
 ## Complete AR inventory
 
-### Done (63)
+### Done (66)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -342,3 +354,6 @@ flowchart LR
 | P1 | [AR-0061](tasks/AR-0061.md): Cross-platform remote-agent round trips | Unclaimed | Verify the complete cross-platform human-in-the-loop path from local UI through SSH to a remote agent and back. | No further action; use a real project host only for optional external qualification. |
 | P1 | [AR-0062](tasks/AR-0062.md): Align UI package metadata with the release lock | Unclaimed | Keep installed UI package metadata aligned with the immutable release selected by Agent Workflow. | No further action; verify the immutable v0.4.3 pin on the next compatibility refresh. |
 | P1 | [AR-0063](tasks/AR-0063.md): Negotiate remote GUI and TUI capability | Unclaimed | Select the graphical or terminal client explicitly for remote SSH handoffs. | No further action; verify capability negotiation at the next cross-project refresh. |
+| P1 | [AR-0064](tasks/AR-0064.md): Professional GUI visual system and interaction help | Unclaimed | Make the desktop decision UI professional, self-explanatory, and comfortable for sustained human review. | Verify the visual system during the next GUI release refresh. |
+| P1 | [AR-0065](tasks/AR-0065.md): Single-command cross-platform UI handoff | Unclaimed | Provide one short command that selects GUI/TUI, transfers the request over SSH, and returns the event journal. | Verify the connector against the next cross-project transport refresh. |
+| P1 | [AR-0066](tasks/AR-0066.md): GUI UX and handoff documentation | Unclaimed | Document the professional GUI interaction model and the one-command local/remote workflow. | Verify documentation links during the next UI release refresh. |
